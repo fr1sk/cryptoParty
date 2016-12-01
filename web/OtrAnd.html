@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="fr1sk.me">
+	<title>Tutor Cryptoparty Serbia</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Theme CSS -->
+	<link href="css/clean-blog.min.css" rel="stylesheet">
+	<link href="css/my.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<style>
+		.figurice {
+			text-align: center;
+			font-size: 15px !important;
+		}
+
+		.neSkaci a:link {
+			color: black;
+		}
+
+		.neSkaci a:visited {
+			color: black !important;
+			text-decoration: none !important;
+		}
+
+		a:hover {
+			color: lawngreen !important;
+			text-decoration: none !important;
+		}
+
+		.img-responsive {
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div id='splashscreen'>
+		<div id='splash-in'></div>
+	</div>
+	<div class="fab">
+		<a href="https://f-droid.org/repository/browse/?fdfilter=xabber&fdid=com.xabber.androiddev" target="_blank" class="hvr"><img src="../images/OTRAndroid/icons/xabber.png" class="hvr" width="50" height="50"></a>
+		<br>
+	 </div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li> <a href="index.html">Home</a> </li>
+					<li> <a href="#">About</a> </li>
+					<li> <a href="#">Tutorials</a> </li>
+					<li> <a href="#">Contact</a> </li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+	<!-- Page Header -->
+	<!-- Set your background image for this header on the line below. -->
+	<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="site-heading">
+						<h1>Android</h1>
+						<hr class="small"> <span class="subheading">Šifrovano ćaskanje za Android</span> </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Main Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-preview">
+					<h2 class="post-title">
+                            1. Kratak uvod
+                        </h2>
+					<h3 class="post-subtitle">
+
+                        </h3>
+					<p class="post-meta"> Ovo uputstvo će vam pomoći da instalirate <strong>Xabber</strong> program otvorenog koda (eng. open-source) na vaš Android telefon kako bi ste pomoću njega mogli da iskoristite <strong>OTR</strong> protokol za šifrovano ćaskanje (eng. instant messaging).</p>
+          <p class="post-meta"> Osim Xabber-a, postoje i drugi programi koji su takođe otvorenog koda i pomoću kojih možete šifrovano ćaskati pomoću OTR ptotokola kao što su na primer Conversations, ChatSecure, Zom, Beem i Jitsi, i koje takođe preporučujemo kao alternative. </p>
+					<p class="post-meta"> Xabber je <strong>XMPP/Jabber</strong> klijent preko koga ćemo koristiti OTR(eng. Off-The-Reccord) protokol za razmenu ključeva i šifrovanu razmenu porukaizmeđu dva učesnika u razgovoru. </p>
+				</div>
+				<hr>
+				<div class="post-preview">
+					<h3 class="post-subtitle">
+                            1.1. Napomene
+                        </h3>
+					<p class="post-meta">OTR protokol ne podržava grupno šifrovano dopisivanje, kao ni šifrovanu razmenu fajlova, već samo tekstualne poruke. </p>
+					<p class="post-meta">Međutim koristeći OTR možete se sa sagovornikom dogovoriti oko tajne šifre tokom dopisivanja, a zatim drugim programom šifrovati fajl dogovorenom šifrom pre slanja, i tek onda izvršiti slanje.</p>
+					<p class="post-meta"> OTR protokol je nezavistan od protokola/servisa koji koristite za komunikaciju pa ćete tako moći da ga koristite za privatnu konverzaciju i preko IRC-a, Google Talk-a, Yahoo Messinger-a i drugih, dok god i vaš sagovornik koristi isti protokol, kao što se ne možete dopisivati ako koristiti Yahoo Messinger, a sagovornik IRC.</p>
+					<p class="post-meta"> OTR funkcioniše samo ako ga koriste obe strane u komunikaciji. </p>
+
+				<hr>
+				<div class="post-preview">
+					<h2 class="post-title">
+                            3. Instalacija Xabber-a
+                        </h2>
+					<p class="post-meta">Xabber možete preuzeti i intalirati sa GuglPlej-a (eng. Google Play) ili <strong>F-Droid-a</strong>, a mi svakako preporučujemo da to uradite sa F-Droid-a.</p>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/01.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 1: Preuzmite Pronađite Xabber na F-Droid-u.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/02.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 2: I preuzmite ga.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/03.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 3: Android će vas obavestiti koje privilegije će imati Xabber. Onda pritisnite "Install" da bi instalirali Xabber.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/04.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 4: Kada se Xabber instalira, pokrenite ga. A zatim pritisnite digme za dodavanje novog naloga.</p>
+					<br>
+
+					<hr>
+					<!-- SLEDECA PODNASLOV-->
+					<h2 class="post-subtitle">
+                            3. Dodavanje vašeg naloga i kontakta
+
+                        </h2>
+					<p class="post-meta">Dalje je potrebno uneti vaš XMPP nalog ukoliko ga imate, ili možete čekirati kvadratić "Register new Account" kako bi sa unetim podacima registrovali na željenom XMPP serveru vaš novi nalog.</p>
+          <!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/05.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 5: Unesite vaš XMPP nalog i šifru. Naš nalog je alisa.sifrovano@dukgo.com, a vi unesite vaš.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="post-preview">
+						<h3 class="post-subtitle">
+	                            3.1 Dodavanje kontakta
+	                        </h3>
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/06.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 6: Kada ste dodali vaš nalog, možete dodati nekog vašeg kontakta kako bi ste sa njim šifrovano ćaskali. Naš kontakt je boban.sifrovano@chatme.im, nakon dodavanja kontakta, vašem kontaktu će sti’ći obaveštenje da ga dodajete i ako vas odobri možete ćaskati.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/07.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 7: Takođe se može desiti da vas neko doda za svog kontakta i u tom slučaju će vam stići obavešetenje o tome i opcija da to prihvatite ili nezavisno od toga da li znate ko je kontakt.</p>
+					<br>
+					<hr>
+					<h2 class="post-subtitle">
+                          4. Šifrovano ćaskanje
+                        </h2>
+				  <p class="post-meta">Nakon što ste dodali kontakta za ćaskanje, mogućnost šifrovanog ćaskannja zavisi od toga da li i vaš kontakt koristi OTR.</p>
+					<p class="post-meta">Naime, Xabber od korisnika sakriva ove ključeve i svo šifrovanje, pa ako kontakt takođe koristi Xabber sigurno će te moći šifrovano komunicirati.</p>
+					<p class="post-meta">Vaš kontakt može koristiti i već pomenute druge XMPP/Jabber klijente ili desktop klijente poput Pidgin-a, Jitsi-ja ili Adium-a, ali unutar tih klijenata mora generisati svoj OTR ključ.</p>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/08.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 8: Nakon što ste dodali kontakta možete započeti konverzaciju sa njime. Ali pre nego što išta počnete kuckati klinite na otljučani katanacu donjem desnom uglu, pa <strong>"Start encryption"</strong>. </p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/09.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 9: Kada ste započeli šifrovanu konverzaciju, potrebno je da verifikujete vašeg sagovornika. To možete učiniti na tri načina pomoću: poređenja otiska, pitanja i odgovora, ili deljene tajne.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/OTRAndroid/10.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 10: Tek kada i kontakt vas verifikuje (odgovori na pitanje, unese deljenu tajnu ili uporedi otisak) oboje možete biti sigurni da vodite privatnu konverzaciju koju niko ne može presresti i dešifrovati. Videćete u donjem desnom uglu zaključan i štikliran katanac.</p>
+					<br>
+					
+	<hr>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<ul class="list-inline text-center">
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+					</ul>
+					<p class="copyright text-muted">Copyleft &copy; tutor.cryptoparty.rs 2016</p>
+				</div>
+			</div>
+		</div>
+		<p class="post-meta" style="color: #444; text-align: center;">Made with <span class="love">♥</span> by Cryptoparty Serbia</p>
+	</footer>
+	<!-- jQuery -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Contact Form JavaScript -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/contact_me.js"></script>
+	<!-- Theme JavaScript -->
+	<script src="js/clean-blog.min.js"></script>
+	<script>
+		$('a.neSkaci').click(function (e) {
+			e.preventDefault();
+		});
+		jQuery(document).ready(function () {
+			$("#splashscreen, #splash-in").delay(800).fadeOut(1000);
+			var offset = 150;
+			var duration = 700;
+			jQuery(window).scroll(function () {
+				$(".fab").css("cursor", "pointer");
+				if (jQuery(this).scrollTop() > offset) {
+					jQuery('.fab').fadeIn(duration);
+				}
+				else {
+					jQuery('.fab').fadeOut(duration);
+				}
+			});
+			jQuery('.fab').dblclick(function (event) {
+				jQuery('html, body').animate({}, duration);
+				return false;
+			})
+		});
+	</script>
+</body>
+
+</html>
