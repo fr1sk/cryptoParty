@@ -16,7 +16,8 @@
 	<!-- Custom Fonts -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+	rel='stylesheet' type='text/css'>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -30,21 +31,21 @@
 			text-align: center;
 			font-size: 15px !important;
 		}
-		
+
 		.neSkaci a:link {
 			color: black;
 		}
-		
+
 		.neSkaci a:visited {
 			color: black !important;
 			text-decoration: none !important;
 		}
-		
+
 		a:hover {
 			color: lawngreen !important;
 			text-decoration: none !important;
 		}
-		
+
 		.img-responsive {
 			margin: 0 auto;
 		}
@@ -55,21 +56,15 @@
 	<div id='splashscreen'>
 		<div id='splash-in'></div>
 	</div>
-	<div class="fab">
-		<a href="https://www.mozilla.org/sr/thunderbird/" target="_blank" class="hvr"><img src="../winSifrovaniMail/icons/Wallpaperfx-3d-Softwarefx-Thunderbird.ico" class="hvr" width="50" height="50"></a>
-		<br>
-		<br>
-		<a href="https://www.gnupg.org/" target="_blank" class="hvr"><img src="../winSifrovaniMail/icons/gpg.png" class="hvr" width="50" height="50"></a>
-		<br>
-		<br>
-		<a href="https://www.enigmail.net/index.php/en/" target="_blank" class="hvr"><img src="../winSifrovaniMail/icons/enigmail.png" class="hvr" width="50" height="50"></a>
-		<br> </div>
+
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
+					<a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -90,8 +85,8 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 					<div class="site-heading">
-						<h1>Windows</h1>
-						<hr class="small"> <span class="subheading">Šifrovanje elektronske pošte</span> </div>
+						<h1>Kako funkcioniše GPG</h1>
+						<hr class="small"> <span class="subheading"></span> </div>
 				</div>
 			</div>
 		</div>
@@ -102,304 +97,198 @@
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 				<div class="post-preview">
 					<h2 class="post-title">
-                            1. Kratak uvod
+                            1. Šifrovanje i Dešifrovanje
                         </h2>
 					<h3 class="post-subtitle">
-                            
+
                         </h3>
-					<p class="post-meta"> Ovo uputstvo će vam pokazati kako da šifrujete elektronsku poštu na opera- tivnom sistemu Windows koristeći <strong>Thunderbird</strong> klijenta elektronske pošte tj. imejl klijenta.</p>
-				</div>
-				<hr>
-				<div class="post-preview">
-					<h2 class="post-title">
-                           2. Instalacija Gpg4win programa
-                        </h2>
-					<p class="post-meta">Od softvera su nam potrebni <strong>Gpg4win</strong> program koji barata sa procesom šifrovanja, dešifrovanja, digitalnog potpisivanja i provere digitalnog potpisa.<strong>Gpg4win</strong> možete preuzeti klikom na ovaj <a href="www.gpg4win.org">link</a></p>
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/01_gpg4win_download.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 1: Preuzmite Gpg4Win sa interneta</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/02-Gpg4win_download.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 2: Preuzmite Gpg4Win sa interneta</p>
-					<br>
-					<p class="post-meta">Vazno je i proveriti <a href="#" class="neSkaci" data-toggle="tooltip" title="Proverite digitalni otisak (heš funkciju označenu kao SHA1 checksum na trećoj slici) i digitalni potpis preuzetog fajla">otisak i digitalni potpis</a> preuzetog programa.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/03_Download_Gpg4wi_Light.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 3: Odaberite Gpg4win Light verziju</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/04_Downloading_Gpg4win.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 4: sačekajte da se program preuzme</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/05_Gpg4win_Downloaded_Gpg4win.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 5: po reuzimanju pokrenite Gpg4win program</p>
-					<br>
-					<p class="post-meta"> Sada samo prođite kroz jednostava i uobičajen proces intalacije Gpg4win programa, koja se svodi na kliktanje <strong>Next</strong> dugmeta. Instalacija je jednos- tavna, ali ćemo svakako proći kroz ceo proces.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/06_Gpg4win_Installer_Language.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 6: odaberite jezik za Gpg4win program, mi biramo Engleski</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/07_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 7: Next</p>
-					<br>
-					<p class="post-meta">Gpg4win je slobodan softver otvorenog koda pod <a href="#" class="neSkaci" data-toggle="tooltip" title="GNU opšta javna licenca">GNU GPL</a> licencom, tako da svako može videti kôd samog softvera, uveriti se u ispravnost ili proučavati način funkcionisanja istog.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/08_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 8: Next</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/09_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 9: Next</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/10_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 10: Next</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/11_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 11: Next</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/12_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 12: Install</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/14_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 13: Next</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/15_Gpg4win_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 14: Finish. Intslacija se završila</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/16_Desktop.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 15: Videćete ikonice na vašem Desktop-u</p>
-					<br> </div>
-				<hr>
-				<div class="post-preview">
-					<h2 class="post-title">
-                            3. Instalacija Thunderbird programa
-                        </h2>
-					<p class="post-meta">Sledeći program koji nam je potreban je Thunderbird klijent elektronske pošte koga možete preuzeti sa mozilla.org/en-US/thunderbird. Zato preporučujemo <strong>Thunderbird</strong> klijenta elektronske pošte koji je otvorenog koda, multiplatformski, podržava šifovanje elektronske pošte kroz <strong>Enigmail</strong> dodatak.</p>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/20_Thunderbird_Mozilla.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 16: Preuzmite <strong>Thunderbird</strong></p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/21_Thunderbird_Mozilla_downloading.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 17: Sačekajte da se završi preuzimanje</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/22_Thunderbird_Mozilla_downloaded.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 18: Pokrenite preuzeti instalacioni fajl <strong>Thunderbird</strong>-a</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/23_Mozilla_Thunderbird_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 19: Instalirajte <strong>Thunderbird</strong></p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/24_Mozilla_Thunderbird_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 20: Instalirajte <strong>Thunderbird</strong></p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/25_Mozilla_Thunderbird_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 21: Instalirajte <strong>Thunderbird</strong></p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/26_Mozilla_Thunderbird_Setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 22: Pokrenite Thunderbird po završetku instalacije</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/27_Mozilla_Thunderbird.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 23: Prvo pokretanje Thunderbird-a</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/28_Mozilla_Thunderbird_email_setup.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 24: Odaberite da želite da podesite vaš postojeći nalog elektronske pošte</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/29_Mozilla_Thunderbird_email_credentials.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 25: Pdesite opcije za vaš nalog. Naš je u ovom primeru: alisa.sifrovano@gmail.com, a vi unesite vašu email adresu i sifru.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/30.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 26: Razlika između <strong>IMAP</strong> i <strong>POP3</strong> protokola je što se kod ovog drugog pošta čuva na vašem računaru, pa u nekim slučajevima, Email provajder neće čuvati kopiju vaše pošte.</p>
-					<br>
+
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/gpgExp/01.jpg" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 1: Svako za sebe generiše svoje ključeve na svom računaru.
+                                            Tajni ključ čuva u tajnosti na sigurnom mestu, a Javni ključ pošalje
+																						na server javnih ključeva.</p>
+
+				  <div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/gpgExp/02.jpg" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 2: Svako sa servera javnih ključeva preuzme javni ključ osobe
+								                            sa kojom želi razmenjivati šifrovane poruke.</p>
+
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/gpgExp/03.jpg" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 3: Kada Alisa napiše poruku, ona je šifruje Bobanovim javnim
+                                            ključem, i pošalje je Bobanu.</p>
+
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/gpgExp/04.jpg" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 4: Boban primljenu poruku dešifrije svojim tajnim ključem.</p>
+
 					<hr>
-					<!-- SLEDECA PODNASLOV-->
-					<h3 class="post-subtitle">
-                            3.1 instalacija Enigmail dodatka
-                        </h3>
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/31.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 27: Izaberimo opciju "Add-ons" iz Thunderbird-a kako bi smo instalirali <strong>Enigmail</strong></p>
-					<p class="post-meta">Sada je i <strong>Thunderbird</strong> mejl klijent instaliran, podešena željena adresa, pa prelazimo na instalaciju <strong>Enigmail</strong> dodatka (eng. Add-ons) mejl klijentu koji će nam omogućiti šifrovanje/dešifrovanje, digitalno potpisivanje i provere digitalnih potpisa iz samog mejl klijenta. Enigmail pruža pomenute funkcionalnost kroz koristeći predhodno instaliran <strong>Gpg4win</strong>, tako da ne morate da pokrećete <strong>Gpg4Win</strong> (<strong>GPA</strong> ikonica na desktop-u), nego pomenute operacije izvodite direktno iz <strong>Thunderbird</strong>-a. Enigmail je dobro integrisan u <strong>Thunderbird</strong> tako da može da upamti vašu šifru za privatni ključ, automatksi dešifruje nove poruke po prispeću, proverava digitalni potpis i vizuelno signalizira ispravnost istih različitim bojama.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/32.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 28: Tražimo Enigmail dodatak</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/33.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 29: Posle instaliranja <strong>Enigmail</strong>-a restartujemo <strong>Thunderbird</strong></p>
-					<br>
+					<div class="post-preview">
+						<h3 class="post-title">
+					  								 1.1. Digitalno potpisivanje i provera autentičnosti
+													</h3>
+
+
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/gpgExp/05.jpg" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 5: Digitalno potpisivanje je suprotan proces od šifrovanja.
+								                            Alisa koristi svoj tajni ključ i njime širuje-potpisuje poruku.
+																						Svako ko ima njen javni ključ onda može proveriti da je poruku zaista
+																						ona napisala dešifrujući njenu poruku njenim javnim ključem.</p>
+
 					<hr>
-					<h3 class="post-subtitle">
-                          3.2 Generisanje GPG ključeva
-                        </h3>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/34.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 30: Sada trebamo da generišemo <strong>GPG</strong> ključece u <strong>Enigmail</strong>-u</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/35.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 31: Pokrenite <strong>Wizard</strong> izaberite standardni način konfigurisanja .</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/36.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 32: <strong>Wizard</strong> će prepoznati predhodno podešen mejl nalog. Vi samo treba da podesite šifru za vaše nove <strong>GPG</strong> ključeve koji će <strong>Wizard</strong> generisati za vas.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/37.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 33: Sačekajte da <strong>Wizard</strong> generiše nove <strong>GPG</strong> ključeve za vas.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/38.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 34: Kada se generisanje ključeva završi, ponudiće vam da generišete Sertifikat za opoziv ključeva (eng. Revocation certificate), obavezno to i uči- nite</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/39.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 35: Naravno, morate uneti i šifru za <strong>GPG</strong> ključ koju ste malopre podesili</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/40.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 36: Sačuvajte sertifikat za opoziv ključeva.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/41_Enigmail_Alert.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 37: Napravite bekap kopiju na neki USB jer ovaj sertifikat treba da čuvate u tajnosti. Ovaj sertifikat će vam omogućiti da opozovete vaše ključeve, ukoliko ih izgubite.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/42_Enigmail_Setup_Wizard.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 38: Nstavite sa procesom.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/43_Enigmail_Setup_Wizard.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 39: Završite sa procesom generisanja ključeva.</p>
-					<br>
-					<!-- SLEDECA -->
-				</div>
+					<div class="post-preview">
+			  		<h3 class="post-title">
+														 1.2. Šifrovanje i digitalno potpisivanje
+													</h3>
+
+				 <div class="embed-responsive " style="height: 50% !important;">
+				   <img src="../images/gpgExp/06.jpg" class="img-responsive img-rounded"> </div>
+					   <p class="post-meta figurice">Figure 6: Šifrovanje i digitalno potpisivanje se može kombinovati
+							                             kako bi se tajna poruka sigurno prenela primaocu, i kako bi primaoc
+																					 mogao kad je dešifruje da se uveri da je pošiljalac zaista onaj koji
+																					 to i tvrdi da jeste.</p>
+
+
+				 <hr>
+	       <div class="post-preview">
+						<h2 class="post-title">
+				 										2. Kako GPG funkcioniše
+				 									</h2>
+
+         <p class="post-meta">Da bi na slikovit način bolje objasnili kako funkcioniše GPG koristićemo
+                              dva načina (jednostavnu matematiku i boje). </p>
+
 				<hr>
-				<div class="post-preview">
-					<h2 class="post-title">
-                           4. Slanje javnog ključa na server javnih ključeva
-                        </h2>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/44_Enigmail_Setup_Wizard.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 40: Sada je potrebno da pošaljemo naš javni ključ na server javnih ključeva kako bi ostali mogli da lako pronađu naš javni ključ i njime šifruju poruku za nas.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/45_Enigmail_Key_Management.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 41: Slanje ključeva naravno obavljamo iz <strong>Enigmail</strong>-a</p>
-					<br> </div>
-				<hr>
-				<div class="post-preview">
-					<h2 class="post-title">
-                          5. Razmena šifrovanih poruka
-                        </h2>
-					<h3 class="post-subtitle">
-                            5.1 Nabavka javnog ključa sagovornika
-                        </h3>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/44_Enigmail_Setup_Wizard.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 42: Da bi smo poslali šifrovanu poruku nekome moramo imati javni ključ te osobe, tj. i ta osoba mora koristiti <strong>GPG</strong></p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/47_keymanagment_searchforkey.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 43: Traženje javnog ključa osobe kojoj želimo poslati šifrovanu poruku.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/48_keymanagment_searchforkey.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 44: Ključ tražimo po mejl adresi</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/49_keymanagment_searchforkey.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 45: I ako je druga osoba napravila svoj ključ i poslala ga na server, kao što smo to i mi uradili, ključ će biti pronađen</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/50_keymanagment_searchforkey.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 46: Biće jedinstvani prikazan i otisak ključ (eng. Fingerprint)</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/51_keymanagment_searchforkey.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 47: I ključ će biti u vašoj bazi ključeva. Ceo ovaj proces nabavke ključa je potrebno uraditi samo jednom za svaku osobu sa kojom želite da razmenjujete šifrovane poruke.</p>
-					<br>
-					<hr>
-					<h3 class="post-subtitle">
-                            5.2 Slanje šifrovane poruke
-                        </h3>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/52_write_encrypted_message.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 48: Sastavimo novu šifrovanu poruku za Bobana (boban.sifrovano@gmail.com) Mala napomena da <strong>GPG</strong> šifruje samo "telo" poruke, ne i naslov!</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/53_encrypted_message_google.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 49: Kada razmenjujemo šifrovane poruke, sve šte naš mejl provajder vidi je šifrovana poruka, naslov poruke, i kome je poruka upućena.</p>
-					<br>
-					<hr>
-					<h3 class="post-subtitle">
-                            5.3 Dešifrovanje primljenje šifrovane pošte
-                        </h3>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/Inbox_decrypt1.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 50: Kada dobijete šifrovanu poruku, <strong>Enigmail</strong> će vam tražiti <strong>GPG</strong> žifru da bi ste dešifrovali mejl.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/Inbox_decrypt2.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 51: Po unošenju šifre, videćete originalni tekst dešifrovane poruke.</p>
-					<br> </div>
-				<hr>
-				<div class="post-preview">
-					<h2 class="post-title">
-                          6. Dodatak
-                        </h2>
-					<h3 class="post-subtitle">
-                            6.1 Windows Live Mail
-                        </h3>
-					<p class="post-meta">Iako na Windows-u već postoji Windows Live Mail on ne podržava šifrovanje elektronske pošte niti postoje dodaci (eng. plugins) koji bi tu funkcionalnost omogućili u Windows Live Mail-u. Takođe, Windows Live Mail je vlasnički softver zatvorenog koda, pa ne bi trebalo da imate poverenja u njega i iz tog razloga. Međutim, ako se iz nekog razloga želite ostati pri Windows Live Mail-u, a u isto vreme želite razmenjivati šifrovane poruke, to možete učiniti kombinovanjem predhodno instaliranog <strong>Gpg4Win</strong> tj. <strong>GPA</strong> pro- grama. Naime, <strong>GPA</strong> ima Clipboard prozor u kome možete uneti tekst koji potom pritiskom na dugme Encrypt šifrujete poruku, pritiskom na dugme Sign digitalno potpisujete poruku. Kada poruku šifrujete u <strong>GPA</strong> programu onda je samo prekopirate u Windows Live Mail u prozoru gde bi ste inače sastavljali poruku, i zatim samo pošaljete.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/wlm_GPA.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 52: Pokrenite <strong>GPA</strong></p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/wlm_GPA_clipboard2.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 53: Otvoriće vam se <strong>Clipboard</strong> u kome možete sastaviti poruku, a potom pritisnite <strong>Encrypt</strong> dugme.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/wlm_GPA_clipboard_encrypt.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 54: Zati će se otvoriti prozor u kome treba da odaberete ključ tj. mejl primaoca za koga šifrujete poruku. Ovo podrazumeva da ste predhodno uvezli primaočev javni ključ.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/wlm_GPA_clipboard4.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 55: Proverite i potvrdite akciju šifrovanja.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/wlm_GPA_clipboard5_copy_message.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 56: Tekst poruke će se zatim šifrovati, a vi ga šifrovanog trebate prekopirati u Windows Live Mail u polje za sastavljanje nove poruke</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../winSifrovaniMail/EncryptedMailWLM.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 57: Kada prekopirate šifrovani tekst u Windows Live Mail unesite primaoca (onog istog za koga ste šifrovali poruku), i pošaljite je.</p>
-					<br> </div>
-				<!-- Pager -->
-			</div>
-		</div>
-	</div>
+			  <div class="post-preview">
+			 		<h3 class="post-title">
+			    									2.1. Boje
+													</h3>
+
+				<p class="post-meta">Prvi način je pomoću boja.</p>
+
+				<p class="post-meta">Zamislite da se Alisa i Boban dogovore oko jedne boje, recimo žute.</p>
+
+				<p class="post-meta">Zatim i Alisa i Boban izaberu svako za sebe svoju tajnu boju,
+					                   Alisa izabere recimo crvenu, a Boban plavu.</p>
+
+				<p class="post-meta">Potom i Alisa i Boban pomešaju žutu sa svojom tajnom bojom, Alisa žutu
+					                   meša sa crvenom, a Boban žutu meša sa plavom.</p>
+
+				<p class="post-meta">Tako Alisa dobija <u>narandžastu</u> (od crvene i žute),
+					                   a Boban <u>zelenu</u> (od plave i žute). </p>
+
+				<p class="post-meta">Zatim i Alisa i Boban pošalju jedno drugom svoje nove mešavine boja,
+					                   Alisa Bobanu pošalje narandžastu, a Boban Alisi zelenu. </p>
+
+
+			 <div class="embed-responsive " style="height: 50% !important;">
+				 <img src="../images/gpgExp/07.jpg" class="img-responsive img-rounded"> </div>
+					 <p class="post-meta figurice">Figure 7: Alisa i boban mešaju javnu žutu sa svojim tajnim bojama,
+						                             a potom razmenjuju novodobijene boje.</p>
+
+
+      <p class="post-meta">Kada Alisa i Boban razmene svoje mešavine boja svako na dobijenu tuđu mešavinu
+				                   dodaje svoju tajnu boju i kombinuje je (meša) u novu boju. </p>
+
+			<p class="post-meta">Na taj način Alisa dodaje svoju tajnu crvenu boju na zelenom, koju je dobila od Bobana,
+				                   i dobija <strong> braon </strong>boju. </p>
+
+			<p class="post-meta">Boban dodaje svoju tajnu plavu na narandžastu, koju je dobio od Alise, i dobija
+				                   <strong>braon </strong>boju. </p>
+
+			<p class="post-meta">Na taj način i Alisa i Boban su došli do tajne boje (braon), ne razmenjujući nikakve tajne
+				                   preko javne mreže. </p>
+
+	    <div class="embed-responsive " style="height: 50% !important;">
+			 	<img src="../images/gpgExp/08.jpg" class="img-responsive img-rounded"> </div>
+			 		<p class="post-meta figurice">Figure 8: Alisa i boban mešaju svoje tajne boje sa razmenjenim mešavinama,
+                                        i dobijaju istu tajnu <strong> braon  </strong> boju.</p>
+
+
+			<hr>
+			<div class="post-preview">
+				<h3 class="post-title">
+													2.2. Matematika
+											</h3>
+
+			<p class="post-meta">Ovde čemo opisati kako radi <strong>RSA</strong> algoritam izmišljen 1977. godine. </p>
+
+			<p class="post-meta">Situacija je ista kao i do sada, imamo Alisu, Bobana, kao i treće lice Evu, koje prisluškuje
+				                   sve informacije koje Alisa i Boban razmenjuju. </p>
+
+			<p class="post-meta">Prvi korak je da Alisa pronađe dva velika prosta broja <strong>p</strong> i <strong>q</strong>
+				                   (prosti brojevi su deljivi samo sa samim sobom i sa jedinicom). </p>
+
+			<p class="post-meta">U stvarnosti <strong>p</strong> i <strong>q</strong> su dužine stotinu cifara svaki,
+				                   ali za potrebe ovog objašnjenja neka budu dosta manji. </p>
+
+			<p class="post-meta">Na primer: p = 17, q = 29.</p>
+
+			<p class="post-meta">Zatim Alisa pomnoži ova dva broja da dobije novi broj <strong>N</strong>: </p>
+
+			<p class="post-meta">N = p ∗ q, N = 17 ∗ 29 = 493.</p>
+
+			<p class="post-meta">Broj N je jedan od dva broja koji čine javni ključ Alise. </p>
+
+			<p class="post-meta">Drugi broj je <strong>e</strong>. Da bi dobila e, Alisa mora da uradi dve
+				                   stvari, prva je da oduzme jedinicu i od p i od q i zatim da ih pomnoži i dobije
+													 novi broj <strong>Q</strong>. </p>
+
+			<p class="post-meta">(p − 1) ∗ (q − 1) = 16 ∗ 28 = 448. </p>
+
+			<p class="post-meta">Zatim faktoriše Q=448 na činioce: </p>
+
+			<p class="post-meta">448 = 2 ∗ 2 ∗ 2 ∗ 2 ∗ 2 ∗ 2 ∗ 7 </p>
+
+			<p class="post-meta">Sada <strong>e</strong> može biti bilo koji broj koji nije deljiv sa faktorima od 448,
+				                   tj. nije deljiv ni sa 2 ni sa 7 u našem slučaju. Pa Alisa bira recimo broj 5. e = 5.</p>
+
+			<p class="post-meta">Alisa sada ima <strong>N</strong> i <strong>e</strong> koji čine njen javni ključ,
+				                   dok su brojevi <strong>p</strong> i <strong>q</strong> njen tajni ključ. </p>
+
+			<p class="post-meta">Sada Alisa može da objavi svoj javni ključ (pošalje ga na server javnih ključeva ili ga
+				                   direkto pošalje Bobanu). </p>
+
+			<p class="post-meta">Kada Boban dobije Alisin javni ključ ( N = 493 i e = 5 ), onda može da šifuje poruku za alisu
+				                   koristeći brojeve iz javnog ključa. Prvo, ako je Bobanova poruka <u>42</u> koju obeležimo sa
+												   <strong>m</strong>, onda Boban mora da uradi dve stvari da bi svoju poruku šifrovao i poslao Alisi. </p>
+
+			<p class="post-meta">Prvo stepenuje svoju poruku sa brojem e: m^e = 42^5 = 130691232 </p>
+
+			<p class="post-meta">Zatim treba da nadje ostatak pri deljenju dobijenog broja 130691232 sa N: </p>
+
+			<p class="post-meta">130691232 mod 493 = 383.</p>
+
+			<p class="post-meta">Sada je broj 383 šifrovana poruka koju Boban šalje Alisi. </p>
+
+			<p class="post-meta">Kada alisa dobije 383 od Bobana, da bi dešifrovala poruku mora da nađe novi broj
+				                   <strong>d</strong> koji će joj pomoći u dešifrovanju. Prvo, Alisa traži umnožke brojeva
+													 <strong>e</strong> i <strong>Q</strong>, tako da je umnožak broja <strong>e</strong> tačno
+													 za jedan veći od umnožka broja <strong>Q</strong>: </p>
+
+			<p class="post-meta">Umnožci broja e=5 su: 5, 10, 15, 20, 25, 30, 35, 40, ..., 1345, .... </p>
+
+			<p class="post-meta">a umnošci broja Q=448 su: 448, 896, 1344, 1792, 2240, 2688, .... </p>
+
+			<p class="post-meta">Primetimo da je 269-i umnožak broja e 1345, tačno za jedan veći od trećeg
+				                   umnožka broja Q 1344. Broj 269 je broj <strong>d</strong> koji smo tražili. </p>
+
+			<p class="post-meta">Sada Alisa može da dešifruje poruku koristeći broj <strong>d</strong> i broj <strong>N</strong>,
+				                   tako što Bobanovu šifrovanu poruku 383 stepenuje na <strong>d</strong> i traži ostatak pri deljenu
+                           tako dobijenog broja sa <strong>N</strong>: </p>
+
+			<p class="post-meta">383^d mod N = 383^269 mod 493 = 42 </p>
+
+			<p class="post-meta">Sigurnost <strong>RSA</strong> algoritma zasniva se na težini razbijanja velokog broja na
+                           dva prosta (problem diskretnog logaritma). </p>
+
+			<p class="post-meta">Izvor: <a href="http://theconversation.com/the-rsa-algorithm-or-how-to-send-private-love-letters-13191">
+			                                link</p>
+
+
+
 	<hr>
 	<!-- Footer -->
 	<footer>
