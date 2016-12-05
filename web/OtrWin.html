@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="fr1sk.me">
+	<title>Tutor Cryptoparty Serbia</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Theme CSS -->
+	<link href="css/clean-blog.min.css" rel="stylesheet">
+	<link href="css/my.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+	 rel='stylesheet' type='text/css'>
+
+	<style>
+		.figurice {
+			text-align: center;
+			font-size: 15px !important;
+		}
+
+		.neSkaci a:link {
+			color: black;
+		}
+
+		.neSkaci a:visited {
+			color: black !important;
+			text-decoration: none !important;
+		}
+
+		a:hover {
+			color: lawngreen !important;
+			text-decoration: none !important;
+		}
+
+		.img-responsive {
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div id='splashscreen'>
+		<div id='splash-in'></div>
+	</div>
+	<div class="fab">
+		<a href="https://f-droid.org/repository/browse/?fdfilter=xabber&fdid=com.xabber.androiddev" target="_blank" class="hvr">
+			<img src="../images/OTRAndroid/icons/xabber.png" class="hvr" width="50" height="50"></a>
+		<br>
+	 </div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
+					 <a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li> <a href="index.html">Home</a> </li>
+					<li> <a href="#">About</a> </li>
+					<li> <a href="#">Tutorials</a> </li>
+					<li> <a href="#">Contact</a> </li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+	<!-- Page Header -->
+	<!-- Set your background image for this header on the line below. -->
+	<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="site-heading">
+						<h1>Windows</h1>
+						<hr class="small"> <span class="subheading">Šifrovano ćaskanje za Windows</span> </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Main Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-preview">
+					<h2 class="post-title">
+                            1. Kratak uvod
+                        </h2>
+					<h3 class="post-subtitle">
+
+                        </h3>
+					<p class="post-meta">Ovo uputstvo će vam pomoći da instalirate <strong>Pidgin</strong>, program otvorenog koda
+                               (eng. open-source) na Windows-u i pomoću njega šiftujete konverzaciju
+                               (eng. instant messaging) sa vašim kontaktima.</p>
+
+					<p class="post-meta">Postoje i drugi programi otvorenog koda za ovu namenu poput Jitsi-ja i Gajim-a
+						                   koi su kao i Pidgin multiplatformski.</p>
+
+					<p class="post-meta">Pidgin podržava preko petnaest protokola, ali mi ćemo pokazati podešavanja na primeru
+						                   <strong>XMPP/Jabber</strong> protokola.</p>
+
+					<p class="post-meta">Za šifrovanje se koristi <strong>OTR</strong> (eng. Off-The-Reccord) protokol koji omogućava
+						                   da dva sagovornika razmenjuju poruke međusobno preko nekog javnog servera (npr. Google,
+															 Facebook, IRC...) tako da server preko koga se dopisuju ne vidi sadržaj poruka.</p>
+
+					<p class="post-meta">OTR pored tzv. <strong>End-To-End</strong> šifrovanja omogućava i
+						                   <strong>autentikaciju</strong> (eng. Authentication) sagovornika tako da ste sigurni
+															 da razgovarate baš sa određenom osobom, a ne sa nekim napadačem,
+															 <strong>porecivost</strong> (eng. Deniabilty) poruka nakon završenog razgovora jer se
+															 poruke ne potpisuju digitalno, pa nema dokaza da ste određenu poruku napisali vi,
+															 i <strong>savršenu naprednu tajnost</strong> (eng. Perfect forward secrecy) koja
+															 garantuje da se predhodno razmenjene poruke ne mogu dešifrovati i u slučaju da
+															 izgubite tajni ključ.</p>
+				</div>
+
+				<div class="post-preview">
+					<h3 class="post-subtitle">
+                            1.1. Napomene
+                        </h3>
+					<p class="post-meta">OTR protokol ne podržava grupno šifrovano dopisivanje, kao ni šifrovanu razmenu fajlova,
+						                   već samo tekstualne poruke. </p>
+
+					<p class="post-meta">Međutim koristeći OTR možete se sa sagovornikom dogovoriti oko tajne šifre tokom
+						                   dopisivanja, a zatim drugim programom šifrovati fajl dogovorenom šifrom pre slanja,
+															 i tek onda izvršiti slanje.</p>
+
+					<p class="post-meta">OTR protokol je nezavistan od protokola/servisa koji koristite za komunikaciju pa ćete
+						                   tako moći da ga koristite za privatnu konverzaciju i preko IRC-a, Google Talk-a,
+															 Yahoo Messinger-a i drugih, dok god i vaš sagovornik koristi isti protokol,
+															 kao što se ne možete dopisivati ako koristiti Yahoo Messinger, a sagovornik IRC.</p>
+
+					<p class="post-meta">OTR funkcioniše samo ako ga koriste obe strane u komunikaciji. </p>
+
+				<hr>
+				<div class="post-preview">
+					<h2 class="post-title">
+                            2. Preuzimanje i Instaliranje Pidgin-a
+                        </h2>
+
+				<div class="post-preview">
+					<h3 class="post-title">
+			                      2.1. Preuzimanje Pidgin-a
+			                  </h3>
+
+					<p class="post-meta">Da bi ste intsalirali Pidgin, predhodno ga morate preuzeti sa interneta, što je najbolje da
+						                   uradite sa zvaničnog sajta Pidgin-a
+															 <a href="https://pidgin.im/download/">.im</a>pidgin.im/download/.</p>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/001.png" class="img-responsive img-rounded"> </div>
+					    <p class="post-meta figurice">Figure 1: Preuzmite Pidgin sa interneta.</p>
+					<br>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/002.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 2: Sačvekajte da preuzimanje počne.</p>
+					<br>
+
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;">
+							<img src="../images/OTRWin/003.png" class="img-responsive img-rounded"> </div>
+						     <p class="post-meta figurice">Figure 3: Sačuvajte preuzeti .exe fajl na vašem računaru.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;">
+							<img src="../images/OTRWin/004.png" class="img-responsive img-rounded"> </div>
+								 <p class="post-meta figurice">Figure 4: Kada se fajl preuzeo, pokrenite ga iz sa vašeg računara.</p>
+
+					<hr>
+					<!-- SLEDECA PODNASLOV-->
+					<h3 class="post-subtitle">
+                            2.2. Instaliranje Pidgin-a
+
+                        </h3>
+
+					<p class="post-meta">Kada pokrenete preuzeti instalacioni fajl, prođite kroz uobičajenu proceduru
+                               instaliranja programa na Windows-u klikćući "Next".</p>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRWin/005.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 5: Početak instalacionog čarobnjaka (eng. Instalation Wizard).
+								                             Pritisnite Next.</p>
+					<br>
+          <p class="post-meta">Ukoliko vas upozori da Adium nije Eplov, slobodno ga pokrenite. </p>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRWin/006.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 6: Prihvatite ponuđenu GPLv2 licencu. Uz Pidgin neće biti instlirani
+                                             nikakav dodatni neželjeni softver. Pritisnite Next.</p>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRWin/007.png" class="img-responsive img-rounded"> </div>
+					      <p class="post-meta figurice">Figure 7: Možete napravit Desktop prečicu (eng. desktop shortcut).
+									                            Pritisnite Next.</p>
+
+
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRWin/008.png" class="img-responsive img-rounded"> </div>
+					      <p class="post-meta figurice">Figure 8: Možete promenit putanju gde će Pidgin biti instaliran, ali je
+                                              najbolje da ostavite podrazumevanu putanju. Pritisnite Next.</p>
+
+
+
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRWin/009.png" class="img-responsive img-rounded"> </div>
+					      <p class="post-meta figurice">Figure 9: Sačvekajte da se instaliranje završi i otakuju,
+									                            prekopirajui instaliraju svi fajlovi, i kada se završi pritisnite Next.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/010.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 10: Kada se instaliranje završi pritisnite Finish.</p>
+
+
+							 <br>
+		 					<hr>
+		 					<h3 class="post-subtitle">
+		                           3. Dodavanje naloga u Pidgin-u
+		                         </h3>
+					<p class="post-meta">Kada ste instalirali Pidgin možete ga pokrenuti, otvoriće se novi prozor i
+                               poželeti vam dobrodošlicu. </p>
+
+
+
+				  <br>
+				 	<!-- SLEDECA -->
+		  	 	<div class="embed-responsive " style="height: 50% !important;">
+				 		<img src="../images/OTRWin/011.png" class="img-responsive img-rounded"> </div>
+				 			 <p class="post-meta figurice">Figure 11: Kliknite "Add..." kako bi ste dodali nalog.</p>
+
+							 <p class="post-meta">Ukoliko nemateveć postojeći nalog, unesite željeno korisničko ime (mi
+                                    koristimo <u>boban.sifrovano</u> korisničko ime) kao i server (mi koristimo <u>rows.io</u>
+                                    server) i šifru koju želite i onda štiklirajte kvadratić "Create this new account
+                                    on the server". </p>
+
+							 <p class="post-meta">Ukoliko već imate nalog, nemojte štiklirate kvadratić za kreiranje novog naloga. </p>
+
+							 <p class="post-meta">Ako ne znate koji XMPP server da koristite, listu javnih XMPP servera možete naći na
+							                         <a href="https://list.jabber.at/">list.jabber.at</a>. </p>
+					 <br>
+			  	<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/012.png" class="img-responsive img-rounded"> </div>
+							 <p class="post-meta figurice">Figure 12: Izaberite XMPP protokol, unesite korisničko ime, server kao i
+                                             šifru za taj nalog.</p>
+
+
+			    <!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRWin/013.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 13: Ukoliko ste registrovali novi nalog pitaće vas da potvrdite korisničko
+								                             ime i šifru, a može vam dati, zavisno o servera na kome se registrujete
+                                             i link ka CAPTCHA veb strani i josš jedno polje gde treba uneti tačno
+                                             karaktere sa CAPTCHA-e.</p>
+
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/014.png" class="img-responsive img-rounded"> </div>
+					    <p class="post-meta figurice">Figure 14: Ako sve unesete ispravno, obavestiće vas o uspešno
+								                            registovanom novom nalogu.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRWin/015.png" class="img-responsive img-rounded"> </div>
+					      <p class="post-meta figurice">Figure 15: I ukoliko je sve prošlo kako treba bilo da sre registrovali novi
+                                              nalog ili dodali postojeć, vaš ekran bi trebalo da izgleda ovako.</p>
+
+				  <p class="post-meta">Mi koristimo <u>Alisa.Sifrovano</u> kao korisničko ime i <u>default.rs</u> kao
+                               XMPP server, a vi odaberite vaše korisničko ime i ako želite drugi server. </p>
+
+					<br>
+	  			<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/013.png" class="img-responsive img-rounded"> </div>
+					    <p class="post-meta figurice">Figure 13: Može vam reći da URL nije dobar...</p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/014.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 14: I onda morate uneti adresu XMPP servera kao i port
+								                            (podrazumevan port za XMPP servere je 5222).</p>
+
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/015.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 15: Onda će se otvoriti novi prozor koji će tražiti da potvrdite
+								                            korisničko ime i šifru, a zavisno od servera može vam dati i link ka
+																						CAPTCHA veb strani i još jedno polje u koje treba da unesete slova i
+																						brojeve prikazane na datoj veb strani CAPTCHA-e.</p>
+					<br>
+					<hr>
+						<h2 class="post-subtitle">
+															4. Podešavanje Pidgin-a
+											</h2>
+
+											<br>
+
+					<h3 class="post-subtitle">
+															4.1. Generisanje OTR kluča
+											</h3>
+
+         <p class="post-meta">Kada ste podesili XMPP nalog, potrebno je da kreirate vaš jedinstveni OTR ključ. </p>
+
+					<br>
+					<!-- SLEDECA -->
+				 <div class="embed-responsive " style="height: 50% !important;">
+			     <img src="../images/OTRWin/016.png" class="img-responsive img-rounded"> </div>
+					   <p class="post-meta figurice">Figure 16: Iz glavnog Pidgin prozora izaberite "Tools" -> "Plugins".</p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/017.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 17:  Štiklirajte "Off-The-Reccord Messaging" i kliknite na "Configure Plugin".</p>
+
+          <p class="post=meta">Ukoliko nemate opciju "Off-The-Reccord Messaging" unutar prozora za konfigurisanje Pidgin dodataka,
+						                   OTR dodatak za Pidgin-a možete ptreuzeti i instalirati sa sajta:
+															 <a href="https://otr.cypherpunks.ca/index.php">otr.cypherpunks.ca</a> .</p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/018.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 18: Ukoliko nemate "Off-The-Reccord Messaging" dodatak unutar
+                                            Pidgin-a preuzmite ga i instalirajte sa sajta
+																					  <a href="https://otr.cypherpunks.ca/index.php">otr.cypherpunks.ca</a>.</p>
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/019.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 19: Pritisnite "Generate" dugme kako bi ste generisali vaš jedinstveni
+                                            OTR kluč.</p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/020.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 20: Pidgin će vas obavestiti kada je ključ generisan.</p>
+
+					<br>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/021.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 21: Kada se OTR ključ generiše dobićete OTR otisak (eng. OTR
+                                            fingerprint) od 40 heksadekadnih karaktera. Taj otisak nije tajna i morate
+                                            ga reći osobama sa kojima želite da vodite šifrovanu konverzaciju.</p>
+
+				<br>
+				<hr>
+				 <h2 class="post-subtitle">
+											5. Dodavanje kontakta
+										</h2>
+						<br>
+
+          <p class="post-meta">Kada imate namešten XMPP nalog i OTR ključ samo vam fali još kontakt
+                               sa kojim možete šifrovano da razmenjujete poruke. </p>
+
+					<p class="post-meta">Ono što treba naglasiti je da i kontakt osoba mora koristi isti protokol kako bi ste komunicirali
+						                   sa njom, i da mora imati svoj OTR ključ. </p>
+					<p class="post-meta">Međutim kontakt ososba ne mora imati nalog na istom serveru na kome imate i vi, samo je
+						                   važno da ima nalog na nekom XMPP serveru kao i vi. </p>
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/022.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 22: Iz glavnog Pidgin prozora izaberite "Buddies" -> "Add buddy..."</p>
+
+
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/023.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 23: U novootvorenom prozoru unesite puni ID kontakta (u našem
+                                            slučaju to je <u>alisa.sifrovano@default.rs</u>) i eventualno ime tog kontakta.</p>
+
+					<br>
+          <p class="post-meta">Kada dodate kontakt, morate sačekati da vas osoba koju ste dodali odobri za svog kontakta.</p>
+
+					<p class="post-meta">Takođe može se desiti da vas neko dodada u njegove kontakte i onda ćete vi dobiti obavešetenje
+						                   o tome i moći da odlučite da li takv zahtev za stupanjem u kontakt želite.</p>
+
+					<p class="post-meta">Savet je da odobravate samo kontakte za koje znate ko su.</p>
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/024.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 24: Ako neko doda vas za svog kontakta možete ga odobriti ili ne u
+                                            zavisnosti da li znate ko je ta osoba.</p>
+
+					<br>
+					<br>
+					<hr>
+					<h2 class="post-subtitle">
+													6. Šifrovana konverzacija
+												</h2>
+					<br>
+					<p class="post-meta">Sada kada imate i kontakta možete započeti konverzaciju. Samo što ona
+                               neće biti šifrovana dok to sami ne omogućite.</p>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/025.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 25: Kao što možete videti konverzacija nije privatna.</p>
+
+					<br>
+
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/026.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 26: Potrebno je da kliknete na crveni "Not private" tekst u donjem
+                                            desnom uglu konverzacionog prozora i odaberete "Start private conversation".</p>
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/027.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 27: Posle čega je potrebno da verifikujete sagovornika iako je dalja
+                                            konverzacija šifrovana kako bi bili sigurni da neki napadač izmedju vas i
+                                            vašeg kontakta ne pokušava da vas prevari i predstavi se kao vaš kontakt
+                                            (tzv. MiTM napad).</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRWin/028.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 28: Nakon toga otvoriće sa novi prozor za verifikaciju kontakta.
+                                            Izaberite motod verifikacije (preko pitanja i odgovora, zajedničke tajne, ili
+                                            jednostavno uporedite OTR otiske).</p>
+
+
+
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;">
+								<img src="../images/OTRWin/029.png" class="img-responsive img-rounded"> </div>
+									<p class="post-meta figurice">Figure 29: Mi biramo upoređivanje OTR otisaka jer je naš sagovornik u istoj
+                                                prostoriji pa možemo se uveriti da je to baš njegov OTR otisak. Izaberite
+                                                "I have" i onda "Authenticate".</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;">
+								<img src="../images/OTRWin/030.png" class="img-responsive img-rounded"> </div>
+									<p class="post-meta figurice">Figure 30: Kada obavite OTR verifikaciju videćete da je konverzacija pri-
+                                                vatna i šifrovana i posaće u donjem desnom uglu "Private".
+                                                Nakon ovoga sva konverzacija sa vašim kontakto me šifrovana.</p>
+
+
+
+
+
+
+
+	<hr>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<ul class="list-inline text-center">
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+					</ul>
+					<p class="copyright text-muted">Copyleft &copy; tutor.cryptoparty.rs 2016</p>
+				</div>
+			</div>
+		</div>
+		<p class="post-meta" style="color: #444; text-align: center;">Made with <span class="love">♥</span> by Cryptoparty Serbia</p>
+	</footer>
+	<!-- jQuery -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Contact Form JavaScript -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/contact_me.js"></script>
+	<!-- Theme JavaScript -->
+	<script src="js/clean-blog.min.js"></script>
+	<script>
+		$('a.neSkaci').click(function (e) {
+			e.preventDefault();
+		});
+		jQuery(document).ready(function () {
+			$("#splashscreen, #splash-in").delay(800).fadeOut(1000);
+			var offset = 150;
+			var duration = 700;
+			jQuery(window).scroll(function () {
+				$(".fab").css("cursor", "pointer");
+				if (jQuery(this).scrollTop() > offset) {
+					jQuery('.fab').fadeIn(duration);
+				}
+				else {
+					jQuery('.fab').fadeOut(duration);
+				}
+			});
+			jQuery('.fab').dblclick(function (event) {
+				jQuery('html, body').animate({}, duration);
+				return false;
+			})
+		});
+	</script>
+</body>
+
+</html>

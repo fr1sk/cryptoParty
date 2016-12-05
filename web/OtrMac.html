@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="fr1sk.me">
+	<title>Tutor Cryptoparty Serbia</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Theme CSS -->
+	<link href="css/clean-blog.min.css" rel="stylesheet">
+	<link href="css/my.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+	 rel='stylesheet' type='text/css'>
+
+	<style>
+		.figurice {
+			text-align: center;
+			font-size: 15px !important;
+		}
+
+		.neSkaci a:link {
+			color: black;
+		}
+
+		.neSkaci a:visited {
+			color: black !important;
+			text-decoration: none !important;
+		}
+
+		a:hover {
+			color: lawngreen !important;
+			text-decoration: none !important;
+		}
+
+		.img-responsive {
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div id='splashscreen'>
+		<div id='splash-in'></div>
+	</div>
+	<div class="fab">
+		<a href="https://f-droid.org/repository/browse/?fdfilter=xabber&fdid=com.xabber.androiddev" target="_blank" class="hvr">
+			<img src="../images/OTRAndroid/icons/xabber.png" class="hvr" width="50" height="50"></a>
+		<br>
+	 </div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
+					 <a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li> <a href="index.html">Home</a> </li>
+					<li> <a href="#">About</a> </li>
+					<li> <a href="#">Tutorials</a> </li>
+					<li> <a href="#">Contact</a> </li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+	<!-- Page Header -->
+	<!-- Set your background image for this header on the line below. -->
+	<header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="site-heading">
+						<h1>Mac OS X</h1>
+						<hr class="small"> <span class="subheading">Šifrovano ćaskanje za Mac OS X</span> </div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Main Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-preview">
+					<h2 class="post-title">
+                            1. Kratak uvod
+                        </h2>
+					<h3 class="post-subtitle">
+
+                        </h3>
+					<p class="post-meta">Ovo uputstvo će vam pomoći da instalirate <strong>Adium</strong>, program otvorenog koda
+                               (eng. open-source) za MacOSX, namenjen za brzo dopisivanje (eng. instant messaging).</p>
+
+					<p class="post-meta">Postoje i drugi program otvorenog koda poput Pidgin-a i Jitsi-ja koji su multiplatformski,
+						                   ali Adium je namenjen samo za MacOSX, i podrazumevano podržava OTR bez instaliranja
+															 dodatnih programa za OTR (kao u slučaju Pidgin-a).</p>
+
+					<p class="post-meta">Adium podržava nekoliko protokola, a mi ćemo pokazati kako da se
+                               podesi za korišćenje XMPP protokola.</p>
+
+					<p class="post-meta">Za šifrovanje se koristi <strong>OTR</strong> (eng. Off-The-Reccord) protokol koji omogućava
+						                   da dva sagovornika razmenjuju poruke međusobno preko nekog javnog servera (npr. Google,
+															 Facebook, IRC...) tako da server preko koga se dopisuju ne vidi sadržaj poruka.</p>
+
+					<p class="post-meta">OTR pored tzv. <strong>End-To-End</strong> šifrovanja omogućava i
+						                   <strong>autentikaciju</strong> (eng. Authentication) sagovornika tako da ste sigurni
+															 da razgovarate baš sa određenom osobom, a ne sa nekim napadačem,
+															 <strong>porecivost</strong> (eng. Deniabilty) poruka nakon završenog razgovora jer se
+															 poruke ne potpisuju digitalno, pa nema dokaza da ste određenu poruku napisali vi,
+															 i <strong>savršenu naprednu tajnost</strong> (eng. Perfect forward secrecy) koja
+															 garantuje da se predhodno razmenjene poruke ne mogu dešifrovati i u slučaju da
+															 izgubite tajni ključ.</p>
+				</div>
+
+				<div class="post-preview">
+					<h3 class="post-subtitle">
+                            1.1. Napomene
+                        </h3>
+					<p class="post-meta">OTR protokol ne podržava grupno šifrovano dopisivanje, kao ni šifrovanu razmenu fajlova,
+						                   već samo tekstualne poruke. </p>
+
+					<p class="post-meta">Međutim koristeći OTR možete se sa sagovornikom dogovoriti oko tajne šifre tokom
+						                   dopisivanja, a zatim drugim programom šifrovati fajl dogovorenom šifrom pre slanja,
+															 i tek onda izvršiti slanje.</p>
+
+					<p class="post-meta">OTR protokol je nezavistan od protokola/servisa koji koristite za komunikaciju pa ćete
+						                   tako moći da ga koristite za privatnu konverzaciju i preko IRC-a, Google Talk-a,
+															 Yahoo Messinger-a i drugih, dok god i vaš sagovornik koristi isti protokol,
+															 kao što se ne možete dopisivati ako koristiti Yahoo Messinger, a sagovornik IRC.</p>
+
+					<p class="post-meta">OTR funkcioniše samo ako ga koriste obe strane u komunikaciji. </p>
+
+				<hr>
+				<div class="post-preview">
+					<h2 class="post-title">
+                            2. Instaliranje Adium-a
+                        </h2>
+					<p class="post-meta">Adium nije Eplov program, pa ga morate preuzeti sa sajta
+					                     <a href="https://adium.im/">adium.im</a>.</p>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/001.png" class="img-responsive img-rounded"> </div>
+					    <p class="post-meta figurice">Figure 1: Preuzmite Adium sa interneta.</p>
+					<br>
+					<p class="post-meta">Nakon toga pokrenite preuzeti fajl kako bi ste instalirali Adium.</p>
+
+					<p class="post-meta">Kada se program pokrene prevuciite sliku zelene patke u folder sa desne strane
+                               kako bi se Adium instalirao.</p>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/002.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 2: Prevucite zelenu patku (logo Adium-a) u folder "Applications"
+								                             kao što je prikazano</p>
+					<br>
+
+					<hr>
+					<!-- SLEDECA PODNASLOV-->
+					<h2 class="post-subtitle">
+                            3. Podešavanje Adium-a
+
+                        </h2>
+
+					<p class="post-meta">Kada se Adium instalirao, nova ikonica će biti postavljena u "Launchpad-u"
+                               odakle možete pokrenuti Adium. </p>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRMac/003.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 3: Pokrenite Adium iz Launchpad-a</p>
+					<br>
+          <p class="post-meta">Ukoliko vas upozori da Adium nije Eplov, slobodno ga pokrenite. </p>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRMac/004.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 4: Slobodno pokrenite Adium, MacOSX upozorava na pokretanje
+                                             svih aplikacija koje nisu iz Epla.</p>
+
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRMac/005.png" class="img-responsive img-rounded"> </div>
+					      <p class="post-meta figurice">Figure 5: Kada se Adium pokrene poželeće vam dobrodošlicu,
+									                            samo produžite dalje.</p>
+
+					<p class="post-meta">Zatim je potrebno da odaberete protokol za koji konfigurišete nalog.</p>
+
+					<p class="post-meta">Mi u ovom uputstvu koristimo <strong>XMPP/Jabber</strong> protokol za komunikaciju, a vi
+                               možete odabrati i neki drugi (dalja podešavanja će biti malo drugačija) jer
+                               je OTR protokol za šifrovanje nezavisan od protokola za komunikaciju, pa
+                               će najverovatnije raditi i sa "Google talk"-om ili "IRC"-om.</p>
+
+
+
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRMac/006.png" class="img-responsive img-rounded"> </div>
+					      <p class="post-meta figurice">Figure 6: Odaberite XMPP/Jabber protokol i unesite ID i šifru za vaš nalog,
+                                              i pritisnite "Next"</p>
+
+          <p class="post-meta">Ukoliko nemate otvoren nalog na nekom XMPP serveru to možete uraditi kasnije
+						                   (videti odeljak registrovanje novog XMPP naloga), sada samo ostavite ID i šifru. </p>
+
+					<p class="post-meta">Ako ne znate koji XMPP server da koristite, listu javnih XMPP servera možete naći na
+					                    <a href="https://list.jabber.at/">list.jabber.at</a>.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/007.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 7: Adium će vas obavestiti da je sve spremno, samo produžite.</p>
+
+				  <br>
+				 	<!-- SLEDECA -->
+		  	 	<div class="embed-responsive " style="height: 50% !important;">
+				 		<img src="../images/OTRMac/008.png" class="img-responsive img-rounded"> </div>
+				 			 <p class="post-meta figurice">Figure 8: Potvrdite još jednom kredencijale vašeg naloga i to je to.</p>
+					 <br>
+			  	<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/009.png" class="img-responsive img-rounded"> </div>
+							 <p class="post-meta figurice">Figure 9: Ovako bi trebalo da izgleda ako ako je sve prošlo kako treba i vaš
+                                             nalog je dostupan (eng. online)</p>
+
+					<br>
+					<hr>
+					<h3 class="post-subtitle">
+                          4. Otvaranje novog XMPP naloga
+                        </h3>
+
+				  <p class="post-meta">Ukoliko nemate XMPP nalog ili ukoliko želite da otvorite novi ispratite i ovo
+                               podpoglavlje, a ukoliko već imate neki XMPP otvoren nalog ovo slobodno preskočite.</p>
+
+          <p class="post-meta">Dakle jednom kada pokrenete Adium, imaćete opciju "Preferences" (u
+                               vrhu ekrana), kliknite na nju.</p>
+			    <!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRMac/010.png" class="img-responsive img-rounded"> </div>
+					     <p class="post-meta figurice">Figure 10: Otvorite Adium -> Preferences.</p>
+
+					<p class="post-meta">A zatim idite u "Accounts" tab, kliknite na plus ikonicu (u donem levom
+                               uglu) da dodate novi nalog i odaberite XMPP protokol. </p>
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/011.png" class="img-responsive img-rounded"> </div>
+					    <p class="post-meta figurice">Figure 11: Accounts -> + > XMPP/Jabber.</p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						 <img src="../images/OTRMac/012.png" class="img-responsive img-rounded"> </div>
+					      <p class="post-meta figurice">Figure 12: Unesite željeni ID (korisničko-ime @ server),
+									                            kao i šifru za pristup tom nalogu.</p>
+
+				  <p class="post-meta">Mi koristimo <u>Alisa.Sifrovano</u> kao korisničko ime i <u>default.rs</u> kao
+                               XMPP server, a vi odaberite vaše korisničko ime i ako želite drugi server. </p>
+
+					<br>
+	  			<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/013.png" class="img-responsive img-rounded"> </div>
+					    <p class="post-meta figurice">Figure 13: Može vam reći da URL nije dobar...</p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/014.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 14: I onda morate uneti adresu XMPP servera kao i port
+								                            (podrazumevan port za XMPP servere je 5222).</p>
+
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/015.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 15: Onda će se otvoriti novi prozor koji će tražiti da potvrdite
+								                            korisničko ime i šifru, a zavisno od servera može vam dati i link ka
+																						CAPTCHA veb strani i još jedno polje u koje treba da unesete slova i
+																						brojeve prikazane na datoj veb strani CAPTCHA-e.</p>
+
+
+					<br>
+					<!-- SLEDECA -->
+				 <div class="embed-responsive " style="height: 50% !important;">
+			     <img src="../images/OTRMac/016.png" class="img-responsive img-rounded"> </div>
+					   <p class="post-meta figurice">Figure 16: I ukoliko sve dobro prođe, obavestiće vas o uspešno
+							                             registrovanom novom nalogu.</p>
+					<br>
+					<hr>
+					<h2 class="post-subtitle">
+					  						4. Podešavanja
+					</h2>
+
+					<br>
+					<hr>
+					<h3 class="post-subtitle">
+					  						4.1. Dodatna podešavanja za veću privatnost
+					</h3>
+
+
+
+
+          <p class="post-meta">Ova podešavanja su opciona, ali svakako doprinose većoj privatnosti korisnika.</p>
+
+					<p class="post-meta">Prvo podešavanje se odnosi na onemogućavanje logovanja poruka,
+                               jer iako su poruke šifrovane u putu između vas i vašeg sagovornika, one se
+                               dešifruju na vašem računaru, i Adium dešifrovane poruke podrayumevano
+                               čuva nezaštićene na disku.</p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/017.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 17:  Onemogućite logovanje, Adium -> Preferences -> General.</p>
+
+          <p class="post=meta">Drugo podešavanje se odnosu na notifikacije, jer će vas Adium obaveštavati o
+						                   novim porukama, tj. iskakaće novi prozorčić sa dešifrovanom porukom svaki put. </p>
+
+					<p class="post=meta">Iako se ove notifikacije neće čuvati na disku, preporuka je isključiti
+                               ih kako sam operativni sistem nebi imao uvid u privatne poruke. </p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/018.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 18: Onemogućite notifikacije, , Adium -> Preferences -> Events.</p>
+					<br>
+					<br>
+					<hr>
+					<h3 class="post-subtitle">
+						             4.2 Podešavanja OTR-a
+												</h3>
+					<p class="post-meta">Kada ste podesili svoj nalog, potrebno je da generišete svoj OTR kluč i tako
+                               dobije svoj jedinstveni OTR otisak (eng. OTR fingerprint). </p>
+
+					<p class="post-meta">Ovo je obavezno kako bi mogli da kasnije koristite ovako generisan ključ
+                               za šifrovanu komunikaciju. </p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/019.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 19: Generišite novi OTR ključ,
+								                            Adium -> Preferences -> Advanced -> Encryption</p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/020.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 20: Kada se kluč generiše prikazaće vam se vaš jedinstveni otisak.
+								                            40 heksadekadnih karaktera (5 grupa po 8 karaktera).</p>
+
+					<br>
+
+					<br>
+					<hr>
+					<h2 class="post-subtitle">
+				                  5. Dodavanje kontakta
+				                </h2>
+          <p class="post-meta">Kada ste podesili nalog i imate OTR ključ, potreban vam je sagovornik. </p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/021.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 21: Kliknite na Adium, pa u gornjem ocpcionom meniju izaberite
+                                            "Contacts" pa "Add Contact"</p>
+          <p class="post-meta">Kontakt mora da ima nalog na nekom XMPP serveru kao i vi, i da koristi
+                               OTR (da ima generisan sopstveni OTR ključ), ali ne mora da ima nalog na istom serveru
+															 kao i vi, već kao u našem primeru, kontakt <u>boban.sifrovano@rows.io</u>
+                               koristi rows.io XMPP server. </p>
+
+					<p class="post-meta">Za razliku od nas jer mi imamo nalog na <u>default.rs</u> XMPP serveru. </p>
+
+					<br>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/022.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 22: Izaberite XMPP protokol (protokol mora biti isti kao i za vaš
+                                            nalog), ID kontakta i opciono nadimak.</p>
+
+					<br>
+          <p class="post-meta">Zatim bi naš kontakt trebao dobiti obaveštenje da hoćemo da stupimo
+                               u kontakt sa njime i može da odabere da li želi ili ne da nas prihvati. </p>
+
+					<p class="post-meta">Ako niste sigurni da li je ovaj zahtev poslat, možete ga ponovo poslati. </p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/023.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 23: Ponovo pošaljite zahtev za stupanje u kontakt ako niste sigurni
+                                            da je vaš sagovornik dobio obaveštenje. Desni klik na kontakt i
+																						"Re-request Authorization from ..."</p>
+
+					<br>
+          <p class="post-meta">Takođe neko može dodati vas u svoje kontakte i u tom slučaju vi će te
+                               primiti obveštenje slično o tom dogadjaju i imati opciju da takav "poziv sa
+                               prijateljstvo" prihvatite ili ne. </p>
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/024.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 24: Prihvatite poziv kontakta ako ga poznajete.
+                                            Kliknite "Authorize" -> Authoriza and add" da bi ste dodali novog kontakta
+                                            ukoliko je zatražio da stupi u kontakt sa vama.</p>
+
+					<br>
+					<br>
+					<hr>
+					<h2 class="post-subtitle">
+													6. Šifrovanje dopisivanja
+												</h2>
+					<br>
+					<p class="post-meta">Kada ste dodali novog kontakta, i ako i on ima OTR ključ, može početi
+                               šifrovana konverzacija. </p>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/025.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 25: Dva puta brzo kliknite na kontakta iz glavnog prozora da bi
+                                            ste otvorili prozor za dopisivanje. Zatim je potrebno da kliknete na ikonicu
+                                            otvorenog katanca i onda na "Initiate Encrypted OTR chat" kako bi započeli
+                                            šifrovanu konverzaciju.</p>
+
+					<br>
+
+
+					<br>
+					<!-- SLEDECA -->
+					<div class="embed-responsive " style="height: 50% !important;">
+						<img src="../images/OTRMac/026.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 26: Potrebno je da verifikujete sagovornikov OTR otisak, i onda
+                                            šifrovana konverzacija počinje.</p>
+	<hr>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<ul class="list-inline text-center">
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+						<li>
+							<a href="#"> <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span> </a>
+						</li>
+					</ul>
+					<p class="copyright text-muted">Copyleft &copy; tutor.cryptoparty.rs 2016</p>
+				</div>
+			</div>
+		</div>
+		<p class="post-meta" style="color: #444; text-align: center;">Made with <span class="love">♥</span> by Cryptoparty Serbia</p>
+	</footer>
+	<!-- jQuery -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Contact Form JavaScript -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/contact_me.js"></script>
+	<!-- Theme JavaScript -->
+	<script src="js/clean-blog.min.js"></script>
+	<script>
+		$('a.neSkaci').click(function (e) {
+			e.preventDefault();
+		});
+		jQuery(document).ready(function () {
+			$("#splashscreen, #splash-in").delay(800).fadeOut(1000);
+			var offset = 150;
+			var duration = 700;
+			jQuery(window).scroll(function () {
+				$(".fab").css("cursor", "pointer");
+				if (jQuery(this).scrollTop() > offset) {
+					jQuery('.fab').fadeIn(duration);
+				}
+				else {
+					jQuery('.fab').fadeOut(duration);
+				}
+			});
+			jQuery('.fab').dblclick(function (event) {
+				jQuery('html, body').animate({}, duration);
+				return false;
+			})
+		});
+	</script>
+</body>
+
+</html>
