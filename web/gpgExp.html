@@ -16,8 +16,7 @@
 	<!-- Custom Fonts -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-	rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -31,23 +30,36 @@
 			text-align: center;
 			font-size: 15px !important;
 		}
-
+		
 		.neSkaci a:link {
 			color: black;
 		}
-
+		
 		.neSkaci a:visited {
 			color: black !important;
 			text-decoration: none !important;
 		}
-
+		
 		a:hover {
 			color: lawngreen !important;
 			text-decoration: none !important;
 		}
-
+		
 		.img-responsive {
 			margin: 0 auto;
+		}
+		
+		html,
+		body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		
+		.container,
+		.navbar-static-top .container,
+		.navbar-fixed-top .container,
+		.navbar-fixed-bottom .container {
+			width: 100%;
 		}
 	</style>
 </head>
@@ -56,22 +68,18 @@
 	<div id='splashscreen'>
 		<div id='splash-in'></div>
 	</div>
-
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
-					<a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="index.html">cryptoparty.rs</a> </div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li> <a href="index.html">Home</a> </li>
-					<li> <a href="#">About</a> </li>
-					<li> <a href="#">Tutorials</a> </li>
-					<li> <a href="#">Contact</a> </li>
+					<li> <a href="select.html">Tutorials</a> </li>
+					<li> <a href="contact.html">Contact</a> </li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -102,189 +110,86 @@
 					<h3 class="post-subtitle">
 
                         </h3>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgExp/01.jpg" class="img-responsive img-rounded"> </div>
-							<p class="post-meta figurice">Figure 1: Svako za sebe generiše svoje ključeve na svom računaru.
-                                            Tajni ključ čuva u tajnosti na sigurnom mestu, a Javni ključ pošalje
-																						na server javnih ključeva.</p>
-
-				  <div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgExp/02.jpg" class="img-responsive img-rounded"> </div>
-							<p class="post-meta figurice">Figure 2: Svako sa servera javnih ključeva preuzme javni ključ osobe
-								                            sa kojom želi razmenjivati šifrovane poruke.</p>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgExp/03.jpg" class="img-responsive img-rounded"> </div>
-							<p class="post-meta figurice">Figure 3: Kada Alisa napiše poruku, ona je šifruje Bobanovim javnim
-                                            ključem, i pošalje je Bobanu.</p>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgExp/04.jpg" class="img-responsive img-rounded"> </div>
-							<p class="post-meta figurice">Figure 4: Boban primljenu poruku dešifrije svojim tajnim ključem.</p>
-
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/01.jpg" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 1: Svako za sebe generiše svoje ključeve na svom računaru. Tajni ključ čuva u tajnosti na sigurnom mestu, a Javni ključ pošalje na server javnih ključeva.</p>
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/02.jpg" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 2: Svako sa servera javnih ključeva preuzme javni ključ osobe sa kojom želi razmenjivati šifrovane poruke.</p>
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/03.jpg" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 3: Kada Alisa napiše poruku, ona je šifruje Bobanovim javnim ključem, i pošalje je Bobanu.</p>
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/04.jpg" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 4: Boban primljenu poruku dešifrije svojim tajnim ključem.</p>
 					<hr>
 					<div class="post-preview">
 						<h3 class="post-title">
 					  								 1.1. Digitalno potpisivanje i provera autentičnosti
 													</h3>
-
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgExp/05.jpg" class="img-responsive img-rounded"> </div>
-							<p class="post-meta figurice">Figure 5: Digitalno potpisivanje je suprotan proces od šifrovanja.
-								                            Alisa koristi svoj tajni ključ i njime širuje-potpisuje poruku.
-																						Svako ko ima njen javni ključ onda može proveriti da je poruku zaista
-																						ona napisala dešifrujući njenu poruku njenim javnim ključem.</p>
-
-					<hr>
-					<div class="post-preview">
-			  		<h3 class="post-title">
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/05.jpg" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 5: Digitalno potpisivanje je suprotan proces od šifrovanja. Alisa koristi svoj tajni ključ i njime širuje-potpisuje poruku. Svako ko ima njen javni ključ onda može proveriti da je poruku zaista ona napisala dešifrujući njenu poruku njenim javnim ključem.</p>
+						<hr>
+						<div class="post-preview">
+							<h3 class="post-title">
 														 1.2. Šifrovanje i digitalno potpisivanje
 													</h3>
-
-				 <div class="embed-responsive " style="height: 50% !important;">
-				   <img src="../images/gpgExp/06.jpg" class="img-responsive img-rounded"> </div>
-					   <p class="post-meta figurice">Figure 6: Šifrovanje i digitalno potpisivanje se može kombinovati
-							                             kako bi se tajna poruka sigurno prenela primaocu, i kako bi primaoc
-																					 mogao kad je dešifruje da se uveri da je pošiljalac zaista onaj koji
-																					 to i tvrdi da jeste.</p>
-
-
-				 <hr>
-	       <div class="post-preview">
-						<h2 class="post-title">
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/06.jpg" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 6: Šifrovanje i digitalno potpisivanje se može kombinovati kako bi se tajna poruka sigurno prenela primaocu, i kako bi primaoc mogao kad je dešifruje da se uveri da je pošiljalac zaista onaj koji to i tvrdi da jeste.</p>
+							<hr>
+							<div class="post-preview">
+								<h2 class="post-title">
 				 										2. Kako GPG funkcioniše
 				 									</h2>
-
-         <p class="post-meta">Da bi na slikovit način bolje objasnili kako funkcioniše GPG koristićemo
-                              dva načina (jednostavnu matematiku i boje). </p>
-
-				<hr>
-			  <div class="post-preview">
-			 		<h3 class="post-title">
+								<p class="post-meta">Da bi na slikovit način bolje objasnili kako funkcioniše GPG koristićemo dva načina (jednostavnu matematiku i boje). </p>
+								<hr>
+								<div class="post-preview">
+									<h3 class="post-title">
 			    									2.1. Boje
 													</h3>
-
-				<p class="post-meta">Prvi način je pomoću boja.</p>
-
-				<p class="post-meta">Zamislite da se Alisa i Boban dogovore oko jedne boje, recimo žute.</p>
-
-				<p class="post-meta">Zatim i Alisa i Boban izaberu svako za sebe svoju tajnu boju,
-					                   Alisa izabere recimo crvenu, a Boban plavu.</p>
-
-				<p class="post-meta">Potom i Alisa i Boban pomešaju žutu sa svojom tajnom bojom, Alisa žutu
-					                   meša sa crvenom, a Boban žutu meša sa plavom.</p>
-
-				<p class="post-meta">Tako Alisa dobija <u>narandžastu</u> (od crvene i žute),
-					                   a Boban <u>zelenu</u> (od plave i žute). </p>
-
-				<p class="post-meta">Zatim i Alisa i Boban pošalju jedno drugom svoje nove mešavine boja,
-					                   Alisa Bobanu pošalje narandžastu, a Boban Alisi zelenu. </p>
-
-
-			 <div class="embed-responsive " style="height: 50% !important;">
-				 <img src="../images/gpgExp/07.jpg" class="img-responsive img-rounded"> </div>
-					 <p class="post-meta figurice">Figure 7: Alisa i boban mešaju javnu žutu sa svojim tajnim bojama,
-						                             a potom razmenjuju novodobijene boje.</p>
-
-
-      <p class="post-meta">Kada Alisa i Boban razmene svoje mešavine boja svako na dobijenu tuđu mešavinu
-				                   dodaje svoju tajnu boju i kombinuje je (meša) u novu boju. </p>
-
-			<p class="post-meta">Na taj način Alisa dodaje svoju tajnu crvenu boju na zelenom, koju je dobila od Bobana,
-				                   i dobija <strong> braon </strong>boju. </p>
-
-			<p class="post-meta">Boban dodaje svoju tajnu plavu na narandžastu, koju je dobio od Alise, i dobija
-				                   <strong>braon </strong>boju. </p>
-
-			<p class="post-meta">Na taj način i Alisa i Boban su došli do tajne boje (braon), ne razmenjujući nikakve tajne
-				                   preko javne mreže. </p>
-
-	    <div class="embed-responsive " style="height: 50% !important;">
-			 	<img src="../images/gpgExp/08.jpg" class="img-responsive img-rounded"> </div>
-			 		<p class="post-meta figurice">Figure 8: Alisa i boban mešaju svoje tajne boje sa razmenjenim mešavinama,
-                                        i dobijaju istu tajnu <strong> braon  </strong> boju.</p>
-
-
-			<hr>
-			<div class="post-preview">
-				<h3 class="post-title">
+									<p class="post-meta">Prvi način je pomoću boja.</p>
+									<p class="post-meta">Zamislite da se Alisa i Boban dogovore oko jedne boje, recimo žute.</p>
+									<p class="post-meta">Zatim i Alisa i Boban izaberu svako za sebe svoju tajnu boju, Alisa izabere recimo crvenu, a Boban plavu.</p>
+									<p class="post-meta">Potom i Alisa i Boban pomešaju žutu sa svojom tajnom bojom, Alisa žutu meša sa crvenom, a Boban žutu meša sa plavom.</p>
+									<p class="post-meta">Tako Alisa dobija <u>narandžastu</u> (od crvene i žute), a Boban <u>zelenu</u> (od plave i žute). </p>
+									<p class="post-meta">Zatim i Alisa i Boban pošalju jedno drugom svoje nove mešavine boja, Alisa Bobanu pošalje narandžastu, a Boban Alisi zelenu. </p>
+									<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/07.jpg" class="img-responsive img-rounded"> </div>
+									<p class="post-meta figurice">Figure 7: Alisa i boban mešaju javnu žutu sa svojim tajnim bojama, a potom razmenjuju novodobijene boje.</p>
+									<p class="post-meta">Kada Alisa i Boban razmene svoje mešavine boja svako na dobijenu tuđu mešavinu dodaje svoju tajnu boju i kombinuje je (meša) u novu boju. </p>
+									<p class="post-meta">Na taj način Alisa dodaje svoju tajnu crvenu boju na zelenom, koju je dobila od Bobana, i dobija <strong> braon </strong>boju. </p>
+									<p class="post-meta">Boban dodaje svoju tajnu plavu na narandžastu, koju je dobio od Alise, i dobija <strong>braon </strong>boju. </p>
+									<p class="post-meta">Na taj način i Alisa i Boban su došli do tajne boje (braon), ne razmenjujući nikakve tajne preko javne mreže. </p>
+									<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgExp/08.jpg" class="img-responsive img-rounded"> </div>
+									<p class="post-meta figurice">Figure 8: Alisa i boban mešaju svoje tajne boje sa razmenjenim mešavinama, i dobijaju istu tajnu <strong> braon  </strong> boju.</p>
+									<hr>
+									<div class="post-preview">
+										<h3 class="post-title">
 													2.2. Matematika
 											</h3>
-
-			<p class="post-meta">Ovde čemo opisati kako radi <strong>RSA</strong> algoritam izmišljen 1977. godine. </p>
-
-			<p class="post-meta">Situacija je ista kao i do sada, imamo Alisu, Bobana, kao i treće lice Evu, koje prisluškuje
-				                   sve informacije koje Alisa i Boban razmenjuju. </p>
-
-			<p class="post-meta">Prvi korak je da Alisa pronađe dva velika prosta broja <strong>p</strong> i <strong>q</strong>
-				                   (prosti brojevi su deljivi samo sa samim sobom i sa jedinicom). </p>
-
-			<p class="post-meta">U stvarnosti <strong>p</strong> i <strong>q</strong> su dužine stotinu cifara svaki,
-				                   ali za potrebe ovog objašnjenja neka budu dosta manji. </p>
-
-			<p class="post-meta">Na primer: p = 17, q = 29.</p>
-
-			<p class="post-meta">Zatim Alisa pomnoži ova dva broja da dobije novi broj <strong>N</strong>: </p>
-
-			<p class="post-meta">N = p ∗ q, N = 17 ∗ 29 = 493.</p>
-
-			<p class="post-meta">Broj N je jedan od dva broja koji čine javni ključ Alise. </p>
-
-			<p class="post-meta">Drugi broj je <strong>e</strong>. Da bi dobila e, Alisa mora da uradi dve
-				                   stvari, prva je da oduzme jedinicu i od p i od q i zatim da ih pomnoži i dobije
-													 novi broj <strong>Q</strong>. </p>
-
-			<p class="post-meta">(p − 1) ∗ (q − 1) = 16 ∗ 28 = 448. </p>
-
-			<p class="post-meta">Zatim faktoriše Q=448 na činioce: </p>
-
-			<p class="post-meta">448 = 2 ∗ 2 ∗ 2 ∗ 2 ∗ 2 ∗ 2 ∗ 7 </p>
-
-			<p class="post-meta">Sada <strong>e</strong> može biti bilo koji broj koji nije deljiv sa faktorima od 448,
-				                   tj. nije deljiv ni sa 2 ni sa 7 u našem slučaju. Pa Alisa bira recimo broj 5. e = 5.</p>
-
-			<p class="post-meta">Alisa sada ima <strong>N</strong> i <strong>e</strong> koji čine njen javni ključ,
-				                   dok su brojevi <strong>p</strong> i <strong>q</strong> njen tajni ključ. </p>
-
-			<p class="post-meta">Sada Alisa može da objavi svoj javni ključ (pošalje ga na server javnih ključeva ili ga
-				                   direkto pošalje Bobanu). </p>
-
-			<p class="post-meta">Kada Boban dobije Alisin javni ključ ( N = 493 i e = 5 ), onda može da šifuje poruku za alisu
-				                   koristeći brojeve iz javnog ključa. Prvo, ako je Bobanova poruka <u>42</u> koju obeležimo sa
-												   <strong>m</strong>, onda Boban mora da uradi dve stvari da bi svoju poruku šifrovao i poslao Alisi. </p>
-
-			<p class="post-meta">Prvo stepenuje svoju poruku sa brojem e: m^e = 42^5 = 130691232 </p>
-
-			<p class="post-meta">Zatim treba da nadje ostatak pri deljenju dobijenog broja 130691232 sa N: </p>
-
-			<p class="post-meta">130691232 mod 493 = 383.</p>
-
-			<p class="post-meta">Sada je broj 383 šifrovana poruka koju Boban šalje Alisi. </p>
-
-			<p class="post-meta">Kada alisa dobije 383 od Bobana, da bi dešifrovala poruku mora da nađe novi broj
-				                   <strong>d</strong> koji će joj pomoći u dešifrovanju. Prvo, Alisa traži umnožke brojeva
-													 <strong>e</strong> i <strong>Q</strong>, tako da je umnožak broja <strong>e</strong> tačno
-													 za jedan veći od umnožka broja <strong>Q</strong>: </p>
-
-			<p class="post-meta">Umnožci broja e=5 su: 5, 10, 15, 20, 25, 30, 35, 40, ..., 1345, .... </p>
-
-			<p class="post-meta">a umnošci broja Q=448 su: 448, 896, 1344, 1792, 2240, 2688, .... </p>
-
-			<p class="post-meta">Primetimo da je 269-i umnožak broja e 1345, tačno za jedan veći od trećeg
-				                   umnožka broja Q 1344. Broj 269 je broj <strong>d</strong> koji smo tražili. </p>
-
-			<p class="post-meta">Sada Alisa može da dešifruje poruku koristeći broj <strong>d</strong> i broj <strong>N</strong>,
-				                   tako što Bobanovu šifrovanu poruku 383 stepenuje na <strong>d</strong> i traži ostatak pri deljenu
-                           tako dobijenog broja sa <strong>N</strong>: </p>
-
-			<p class="post-meta">383^d mod N = 383^269 mod 493 = 42 </p>
-
-			<p class="post-meta">Sigurnost <strong>RSA</strong> algoritma zasniva se na težini razbijanja velokog broja na
-                           dva prosta (problem diskretnog logaritma). </p>
-
-			<p class="post-meta">Izvor: <a href="http://theconversation.com/the-rsa-algorithm-or-how-to-send-private-love-letters-13191">
+										<p class="post-meta">Ovde čemo opisati kako radi <strong>RSA</strong> algoritam izmišljen 1977. godine. </p>
+										<p class="post-meta">Situacija je ista kao i do sada, imamo Alisu, Bobana, kao i treće lice Evu, koje prisluškuje sve informacije koje Alisa i Boban razmenjuju. </p>
+										<p class="post-meta">Prvi korak je da Alisa pronađe dva velika prosta broja <strong>p</strong> i <strong>q</strong> (prosti brojevi su deljivi samo sa samim sobom i sa jedinicom). </p>
+										<p class="post-meta">U stvarnosti <strong>p</strong> i <strong>q</strong> su dužine stotinu cifara svaki, ali za potrebe ovog objašnjenja neka budu dosta manji. </p>
+										<p class="post-meta">Na primer: p = 17, q = 29.</p>
+										<p class="post-meta">Zatim Alisa pomnoži ova dva broja da dobije novi broj <strong>N</strong>: </p>
+										<p class="post-meta">N = p ∗ q, N = 17 ∗ 29 = 493.</p>
+										<p class="post-meta">Broj N je jedan od dva broja koji čine javni ključ Alise. </p>
+										<p class="post-meta">Drugi broj je <strong>e</strong>. Da bi dobila e, Alisa mora da uradi dve stvari, prva je da oduzme jedinicu i od p i od q i zatim da ih pomnoži i dobije novi broj <strong>Q</strong>. </p>
+										<p class="post-meta">(p − 1) ∗ (q − 1) = 16 ∗ 28 = 448. </p>
+										<p class="post-meta">Zatim faktoriše Q=448 na činioce: </p>
+										<p class="post-meta">448 = 2 ∗ 2 ∗ 2 ∗ 2 ∗ 2 ∗ 2 ∗ 7 </p>
+										<p class="post-meta">Sada <strong>e</strong> može biti bilo koji broj koji nije deljiv sa faktorima od 448, tj. nije deljiv ni sa 2 ni sa 7 u našem slučaju. Pa Alisa bira recimo broj 5. e = 5.</p>
+										<p class="post-meta">Alisa sada ima <strong>N</strong> i <strong>e</strong> koji čine njen javni ključ, dok su brojevi <strong>p</strong> i <strong>q</strong> njen tajni ključ. </p>
+										<p class="post-meta">Sada Alisa može da objavi svoj javni ključ (pošalje ga na server javnih ključeva ili ga direkto pošalje Bobanu). </p>
+										<p class="post-meta">Kada Boban dobije Alisin javni ključ ( N = 493 i e = 5 ), onda može da šifuje poruku za alisu koristeći brojeve iz javnog ključa. Prvo, ako je Bobanova poruka <u>42</u> koju obeležimo sa <strong>m</strong>, onda Boban mora da uradi dve stvari da bi svoju poruku šifrovao i poslao Alisi. </p>
+										<p class="post-meta">Prvo stepenuje svoju poruku sa brojem e: m^e = 42^5 = 130691232 </p>
+										<p class="post-meta">Zatim treba da nadje ostatak pri deljenju dobijenog broja 130691232 sa N: </p>
+										<p class="post-meta">130691232 mod 493 = 383.</p>
+										<p class="post-meta">Sada je broj 383 šifrovana poruka koju Boban šalje Alisi. </p>
+										<p class="post-meta">Kada alisa dobije 383 od Bobana, da bi dešifrovala poruku mora da nađe novi broj <strong>d</strong> koji će joj pomoći u dešifrovanju. Prvo, Alisa traži umnožke brojeva <strong>e</strong> i <strong>Q</strong>, tako da je umnožak broja <strong>e</strong> tačno za jedan veći od umnožka broja <strong>Q</strong>: </p>
+										<p class="post-meta">Umnožci broja e=5 su: 5, 10, 15, 20, 25, 30, 35, 40, ..., 1345, .... </p>
+										<p class="post-meta">a umnošci broja Q=448 su: 448, 896, 1344, 1792, 2240, 2688, .... </p>
+										<p class="post-meta">Primetimo da je 269-i umnožak broja e 1345, tačno za jedan veći od trećeg umnožka broja Q 1344. Broj 269 je broj <strong>d</strong> koji smo tražili. </p>
+										<p class="post-meta">Sada Alisa može da dešifruje poruku koristeći broj <strong>d</strong> i broj <strong>N</strong>, tako što Bobanovu šifrovanu poruku 383 stepenuje na <strong>d</strong> i traži ostatak pri deljenu tako dobijenog broja sa <strong>N</strong>: </p>
+										<p class="post-meta">383^d mod N = 383^269 mod 493 = 42 </p>
+										<p class="post-meta">Sigurnost <strong>RSA</strong> algoritma zasniva se na težini razbijanja velokog broja na dva prosta (problem diskretnog logaritma). </p>
+										<p class="post-meta">Izvor: <a href="http://theconversation.com/the-rsa-algorithm-or-how-to-send-private-love-letters-13191">
 			                                link</p>
 
 
@@ -300,59 +205,58 @@
 							<a href="#"> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span> </a>
-						</li>
-						<li>
-							<a href="#"> <span class="fa-stack fa-lg">
+                                </span> </a> </li>
+											<li>
+												<a href="#"> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
                                 </span> </a>
-						</li>
-						<li>
-							<a href="#"> <span class="fa-stack fa-lg">
+											</li>
+											<li>
+												<a href="#"> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                                 </span> </a>
-						</li>
-					</ul>
-					<p class="copyright text-muted">Copyleft &copy; tutor.cryptoparty.rs 2016</p>
-				</div>
-			</div>
-		</div>
-		<p class="post-meta" style="color: #444; text-align: center;">Made with <span class="love">♥</span> by Cryptoparty Serbia</p>
-	</footer>
-	<!-- jQuery -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<!-- Bootstrap Core JavaScript -->
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Contact Form JavaScript -->
-	<script src="js/jqBootstrapValidation.js"></script>
-	<script src="js/contact_me.js"></script>
-	<!-- Theme JavaScript -->
-	<script src="js/clean-blog.min.js"></script>
-	<script>
-		$('a.neSkaci').click(function (e) {
-			e.preventDefault();
-		});
-		jQuery(document).ready(function () {
-			$("#splashscreen, #splash-in").delay(800).fadeOut(1000);
-			var offset = 150;
-			var duration = 700;
-			jQuery(window).scroll(function () {
-				$(".fab").css("cursor", "pointer");
-				if (jQuery(this).scrollTop() > offset) {
-					jQuery('.fab').fadeIn(duration);
-				}
-				else {
-					jQuery('.fab').fadeOut(duration);
-				}
-			});
-			jQuery('.fab').dblclick(function (event) {
-				jQuery('html, body').animate({}, duration);
-				return false;
-			})
-		});
-	</script>
+											</li>
+											</ul>
+											<p class="copyright text-muted">Copyleft &copy; tutor.cryptoparty.rs 2016</p>
+									</div>
+								</div>
+							</div>
+							<p class="post-meta" style="color: #444; text-align: center;">Made with <span class="love">♥</span> by Cryptoparty Serbia</p>
+							</footer>
+							<!-- jQuery -->
+							<script src="vendor/jquery/jquery.min.js"></script>
+							<!-- Bootstrap Core JavaScript -->
+							<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+							<!-- Contact Form JavaScript -->
+							<script src="js/jqBootstrapValidation.js"></script>
+							<script src="js/contact_me.js"></script>
+							<!-- Theme JavaScript -->
+							<script src="js/clean-blog.min.js"></script>
+							<script>
+								$('a.neSkaci').click(function (e) {
+									e.preventDefault();
+								});
+								jQuery(document).ready(function () {
+									$("#splashscreen, #splash-in").delay(800).fadeOut(1000);
+									var offset = 150;
+									var duration = 700;
+									jQuery(window).scroll(function () {
+										$(".fab").css("cursor", "pointer");
+										if (jQuery(this).scrollTop() > offset) {
+											jQuery('.fab').fadeIn(duration);
+										}
+										else {
+											jQuery('.fab').fadeOut(duration);
+										}
+									});
+									jQuery('.fab').dblclick(function (event) {
+										jQuery('html, body').animate({}, duration);
+										return false;
+									})
+								});
+							</script>
 </body>
 
 </html>

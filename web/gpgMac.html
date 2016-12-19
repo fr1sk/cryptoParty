@@ -11,7 +11,7 @@
 	<!-- Bootstrap Core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Theme CSS -->
-	<link href="css/clean-blog.min.css"	 rel="stylesheet">
+	<link href="css/clean-blog.min.css" rel="stylesheet">
 	<link href="css/my.css" rel="stylesheet">
 	<!-- Custom Fonts -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,23 +30,36 @@
 			text-align: center;
 			font-size: 15px !important;
 		}
-
+		
 		.neSkaci a:link {
 			color: black;
 		}
-
+		
 		.neSkaci a:visited {
 			color: black !important;
 			text-decoration: none !important;
 		}
-
+		
 		a:hover {
 			color: lawngreen !important;
 			text-decoration: none !important;
 		}
-
+		
 		.img-responsive {
 			margin: 0 auto;
+		}
+		
+		html,
+		body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		
+		.container,
+		.navbar-static-top .container,
+		.navbar-fixed-top .container,
+		.navbar-fixed-bottom .container {
+			width: 100%;
 		}
 	</style>
 </head>
@@ -57,21 +70,19 @@
 	</div>
 	<div class="fab">
 		<a href="https://gpgtools.org/" target="_blank" class="hvr"><img src="../images/gpgMac/icons/gpgtools.png" class="hvr" width="50" height="50"></a>
-		<br>
-	 </div>
+		<br> </div>
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="index.html">cryptoparty.rs</a> </div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li> <a href="index.html">Home</a> </li>
-					<li> <a href="#">About</a> </li>
-					<li> <a href="#">Tutorials</a> </li>
-					<li> <a href="#">Contact</a> </li>
+					<li> <a href="select.html">Tutorials</a> </li>
+					<li> <a href="contact.html">Contact</a> </li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -102,16 +113,15 @@
 					<h3 class="post-subtitle">
 
                         </h3>
-					<p class="post-meta"> Ovo uputstvo će vam pokazati kako da šifrujete elektronsku poštu na operativnom sistemu                              Mekintoš koristeći podrazumevanog klijenta elektronske
-                        pošte tj. imejl klijenta na Mekintošu. Mekinoš operatini sistem nije u potpunosti otvorenog koda, kao ni softver koji dolazi uz operativni sistem, pa ne treba imati previše poverenja u pri
-                        vatnost ličnih podataka na ovom operativnom sistemu. Kada je to rečeno pređimo na uputstvo za konfigurisanje  <strong>GPG</strong>programa za Mac.</p>
+					<p class="post-meta"> Ovo uputstvo će vam pokazati kako da šifrujete elektronsku poštu na operativnom sistemu Mekintoš koristeći podrazumevanog klijenta elektronske pošte tj. imejl klijenta na Mekintošu. Mekinoš operatini sistem nije u potpunosti otvorenog koda, kao ni softver koji dolazi uz operativni sistem, pa ne treba imati previše poverenja u pri vatnost ličnih podataka na ovom operativnom sistemu. Kada je to rečeno pređimo na uputstvo za konfigurisanje <strong>GPG</strong>programa za Mac.</p>
 				</div>
 				<hr>
 				<div class="post-preview">
 					<h2 class="post-title">
                            2. Instlacija GpgTools programa
                         </h2>
-					<p class="post-meta">Najpre je potrebno da preuzmete prgram <a href="https://gpgtools.org/" data-toggle="tooltip" title="Preuzmite GPG Tools."> <strong>GpgTools</strong> </a>. To je program zadužen za kreiranje <strong>GPG</strong> ključeva potrebnih za šifrovanje dešifrovanje poruka, digitalno potpisivanje i provere digitalnih potpisa poruka.</p>
+					<p class="post-meta">Najpre je potrebno da preuzmete prgram
+						<a href="https://gpgtools.org/" data-toggle="tooltip" title="Preuzmite GPG Tools."> <strong>GpgTools</strong> </a>. To je program zadužen za kreiranje <strong>GPG</strong> ključeva potrebnih za šifrovanje dešifrovanje poruka, digitalno potpisivanje i provere digitalnih potpisa poruka.</p>
 					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/01_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
 					<p class="post-meta figurice">Figure 1: Preuzmite GpgTools sa interneta</p>
 					<br>
@@ -119,7 +129,6 @@
 					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/02_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
 					<p class="post-meta figurice">Figure 2: Kada se završi preuzimanje <strong>Gpgtools</strong> programa, pokrenite ga.</p>
 					<br>
-
 					<br>
 					<!-- SLEDECA -->
 					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/03_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
@@ -133,7 +142,6 @@
 					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/05_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
 					<p class="post-meta figurice">Figure 5: standardna instalacija će uraditi sve potrebno za vas automatski.</p>
 					<br>
-
 					<!-- SLEDECA -->
 					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/06_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
 					<p class="post-meta figurice">Figure 6: Naravno, tražiće vam šifru korisnika sistema kako bi se program instalirao.</p>
@@ -142,143 +150,114 @@
 					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/07_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
 					<p class="post-meta figurice">Figure 7: I kada završi sa upisom podataka proces instalacije je gotov.</p>
 					<br>
-
-
-				<hr>
-				<div class="post-preview">
+					<hr>
+					<div class="post-preview">
 						<h3 class="post-subtitle">
                            2.1 Generisanje GPG ključeva
                         </h3>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/08_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 8: Sada unesite email adresu za koju generišete ključeve i podesite šifru za te ključeve Ovu šifru morate zapamtiti ili zapisati negde, jer će vam trebati da bi ste dešifrovali primljene šifrovane poruke.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/09_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 9: Kada i to završite, <strong>Gpgtools</strong> će vaš novi javni ključ poslati na server javnih ključeva kako bi drugi ljudi koristili taj javni ključ da vam pošalju šifrovane poruke.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/10_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 10: Vaš novi ključ će biti prikazan u  bazi ključeva. <strong>GpgTools</strong> bazi ključeva.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/11_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 11: Sada je potrebno da podesimo i mejl klijenta za isti mejl nalog za koji smo kreirali ključeva, ukoliko to već nismo ranije uradili.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/12_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 12: Konkretno mi koristimo Gmail u ovom uputstvu, a vi podesite za vašeg mejl provajdera. </p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/13_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 13: Podesite istu mejl adresu kao onu za koju ste kreirali ključeve.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/14_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 14: Koristimo mejl naravno.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/15_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 15: Sada će mo pokušati da napišemo šifrovanu poruku.</p>
-					<br>
-					<!-- SLEDECA -->
-                    <hr>
-				<div class="post-preview">
-					<h2 class="post-title">
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/08_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 8: Sada unesite email adresu za koju generišete ključeve i podesite šifru za te ključeve Ovu šifru morate zapamtiti ili zapisati negde, jer će vam trebati da bi ste dešifrovali primljene šifrovane poruke.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/09_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 9: Kada i to završite, <strong>Gpgtools</strong> će vaš novi javni ključ poslati na server javnih ključeva kako bi drugi ljudi koristili taj javni ključ da vam pošalju šifrovane poruke.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/10_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 10: Vaš novi ključ će biti prikazan u bazi ključeva. <strong>GpgTools</strong> bazi ključeva.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/11_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 11: Sada je potrebno da podesimo i mejl klijenta za isti mejl nalog za koji smo kreirali ključeva, ukoliko to već nismo ranije uradili.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/12_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 12: Konkretno mi koristimo Gmail u ovom uputstvu, a vi podesite za vašeg mejl provajdera. </p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/13_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 13: Podesite istu mejl adresu kao onu za koju ste kreirali ključeve.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/14_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 14: Koristimo mejl naravno.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/15_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 15: Sada će mo pokušati da napišemo šifrovanu poruku.</p>
+						<br>
+						<!-- SLEDECA -->
+						<hr>
+						<div class="post-preview">
+							<h2 class="post-title">
                           3. Šifrovanje poruke primaocu pošte
                         </h2>
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/16_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 16: Primetite kako u gornjem desnom uglu prozora za sastavl-
-janje poruke ima zeleni pravouganik sa zankom <strong>OpenPGP</strong>. To znači da
-
-je <strong>Gpgtools</strong> integrisan u mejl kljijenta. Takođe primetite da je sivi katanac
-
-otključan. Da bi šifrovali poruku za nekog primaoca, prvo moramo imati
-
-njegov javni ključ (ako primaoc koristi GPG tj. ima svoje ključeve)</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/17_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 17: Pa ponovo otvaramo <strong>Gpgtolls</strong> kako bi smo iz njega tražili javni
-
-ključ osobe kojoj šifrujemo mejl.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/18_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 18: Tražimo ključeve.</p>
-					<br>
-					<hr>
-					<!-- SLEDECA PODNASLOV-->
-
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/19_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 19: Unosimo mejl adresu ongoa čiji nam javni ključ treba, tj onome
-
-kome pišemo.</p>
-
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/20_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 20: ako ključ postoji, biva pronađen i mi ga preuzimamo.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/21_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 21: Poruka o uspešnom pribavljanju javnog novog javnog ključa.</p>
-					<br>
-
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/21_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">FFigure 21: Poruka o uspešnom pribavljanju javnog novog javnog ključa.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/22_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 22: Videće te novi ključ u <strong>Gpgtools</strong> programu.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/23_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 23: I sada kada se vratimo na sastavljanje našeg šifrovanog mejla,posle unosa adrese primaoca poruke, videće te da se katanac promenio u plavu boju i da sada poruka mož da se šifruje.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/24_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 24: Kada završite pisanje poruke i kliknete na dugme za slanje
-
-(ikonica papirnog aviončića), tražiće vam šifru za <strong>GPG</strong>, kako bi otključao
-
-vaš tajni ključ i njime digitalno potpisao poruku koju šaljete.</p>
-					<br>
-					<!-- SLEDECA -->
-                      <hr>
-				<div class="post-preview">
-					<h2 class="post-title">
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/16_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 16: Primetite kako u gornjem desnom uglu prozora za sastavl- janje poruke ima zeleni pravouganik sa zankom <strong>OpenPGP</strong>. To znači da je <strong>Gpgtools</strong> integrisan u mejl kljijenta. Takođe primetite da je sivi katanac otključan. Da bi šifrovali poruku za nekog primaoca, prvo moramo imati njegov javni ključ (ako primaoc koristi GPG tj. ima svoje ključeve)</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/17_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 17: Pa ponovo otvaramo <strong>Gpgtolls</strong> kako bi smo iz njega tražili javni ključ osobe kojoj šifrujemo mejl.</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/18_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 18: Tražimo ključeve.</p>
+							<br>
+							<hr>
+							<!-- SLEDECA PODNASLOV-->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/19_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 19: Unosimo mejl adresu ongoa čiji nam javni ključ treba, tj onome kome pišemo.</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/20_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 20: ako ključ postoji, biva pronađen i mi ga preuzimamo.</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/21_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 21: Poruka o uspešnom pribavljanju javnog novog javnog ključa.</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/21_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">FFigure 21: Poruka o uspešnom pribavljanju javnog novog javnog ključa.</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/22_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 22: Videće te novi ključ u <strong>Gpgtools</strong> programu.</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/23_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 23: I sada kada se vratimo na sastavljanje našeg šifrovanog mejla,posle unosa adrese primaoca poruke, videće te da se katanac promenio u plavu boju i da sada poruka mož da se šifruje.</p>
+							<br>
+							<!-- SLEDECA -->
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/24_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 24: Kada završite pisanje poruke i kliknete na dugme za slanje (ikonica papirnog aviončića), tražiće vam šifru za <strong>GPG</strong>, kako bi otključao vaš tajni ključ i njime digitalno potpisao poruku koju šaljete.</p>
+							<br>
+							<!-- SLEDECA -->
+							<hr>
+							<div class="post-preview">
+								<h2 class="post-title">
                           4 Šta vidi mejl provajder
                         </h2>
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/25_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 25: Vaš mejl provajder, kao i mejl provajder osobe kojoj ste poslali
-
-šifrovanu poruku mogu videti samo naslov poruke i ko kome šalje šifrovanu
-
-poruku, ali ne i sadržaj iste.</p>
-					<br>
-					<!-- SLEDECA -->
-                           <hr>
-				<div class="post-preview">
-					<h2 class="post-title">
+								<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/25_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+								<p class="post-meta figurice">Figure 25: Vaš mejl provajder, kao i mejl provajder osobe kojoj ste poslali šifrovanu poruku mogu videti samo naslov poruke i ko kome šalje šifrovanu poruku, ali ne i sadržaj iste.</p>
+								<br>
+								<!-- SLEDECA -->
+								<hr>
+								<div class="post-preview">
+									<h2 class="post-title">
                           5 Dešifrovanje primljene šifrovane poruke
                         </h2>
-					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/26_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
-					<p class="post-meta figurice">Figure 26: Kada primite novu poruku u mejl klijentu, ako je ona šifrovana
-
-klijent će to prepoznati i ponuditi da dešifruje automatksi ako unesete šifru
-
-za vaš tajni <strong>GPG</strong> ključ.</p>
-					 </div>
-				<!-- Pager -->
+									<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgMac/26_Oracle_VM_VirtualBox.png" class="img-responsive img-rounded"> </div>
+									<p class="post-meta figurice">Figure 26: Kada primite novu poruku u mejl klijentu, ako je ona šifrovana klijent će to prepoznati i ponuditi da dešifruje automatksi ako unesete šifru za vaš tajni <strong>GPG</strong> ključ.</p>
+								</div>
+								<!-- Pager -->
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
 		</div>
 	</div>
 	<hr>

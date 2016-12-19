@@ -16,8 +16,7 @@
 	<!-- Custom Fonts -->
 	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-	 rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -31,23 +30,36 @@
 			text-align: center;
 			font-size: 15px !important;
 		}
-
+		
 		.neSkaci a:link {
 			color: black;
 		}
-
+		
 		.neSkaci a:visited {
 			color: black !important;
 			text-decoration: none !important;
 		}
-
+		
 		a:hover {
 			color: lawngreen !important;
 			text-decoration: none !important;
 		}
-
+		
 		.img-responsive {
 			margin: 0 auto;
+		}
+		
+		html,
+		body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		
+		.container,
+		.navbar-static-top .container,
+		.navbar-fixed-top .container,
+		.navbar-fixed-bottom .container {
+			width: 100%;
 		}
 	</style>
 </head>
@@ -57,13 +69,10 @@
 		<div id='splash-in'></div>
 	</div>
 	<div class="fab">
-		<a href="https://play.google.com/store/apps/details?id=org.thialfihar.android.apg" target="_blank" class="hvr">
-			<img src="../images/gpgAnd/icons/apg.jpeg"
-			 class="hvr" width="50" height="50"></a>
+		<a href="https://play.google.com/store/apps/details?id=org.thialfihar.android.apg" target="_blank" class="hvr"> <img src="../images/gpgAnd/icons/apg.jpeg" class="hvr" width="50" height="50"></a>
 		<br>
 		<br>
-		<a href="https://play.google.com/store/apps/details?id=com.fsck.k9" target="_blank" class="hvr">
-			<img src="../images/gpgAnd/icons/k9mail.png" class="hvr" width="50" height="50"></a>
+		<a href="https://play.google.com/store/apps/details?id=com.fsck.k9" target="_blank" class="hvr"> <img src="../images/gpgAnd/icons/k9mail.png" class="hvr" width="50" height="50"></a>
 		<br>
 		<br> </div>
 	<!-- Navigation -->
@@ -71,16 +80,13 @@
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button>
-					 <a class="navbar-brand" href="index.html">tutor.cryptoparty.rs</a> </div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="index.html">cryptoparty.rs</a> </div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li> <a href="index.html">Home</a> </li>
-					<li> <a href="#">About</a> </li>
-					<li> <a href="#">Tutorials</a> </li>
-					<li> <a href="#">Contact</a> </li>
+					<li> <a href="select.html">Tutorials</a> </li>
+					<li> <a href="contact.html">Contact</a> </li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -111,305 +117,195 @@
 					<h3 class="post-subtitle">
 
                         </h3>
-					<p class="post-meta">Ovaj tutorijal će vam omogućiti da sa lakoćom razmenjujete šifrovanu
-						                   elektronsku poštu na vašem android telefonu koristeći vašu postojeću
-															 imejl adresu. </p>
-
-					<p class="post-meta">Da bi mogli i na Android-u da primate i šaljete šifrovanu elektronsku
-						                   poštu (imejl), potreban vam je program za manipulaciju GPG ili
-                               OpenPGP ključevima kao i imejl klijent. </p>
-
+					<p class="post-meta">Ovaj tutorijal će vam omogućiti da sa lakoćom razmenjujete šifrovanu elektronsku poštu na vašem android telefonu koristeći vašu postojeću imejl adresu. </p>
+					<p class="post-meta">Da bi mogli i na Android-u da primate i šaljete šifrovanu elektronsku poštu (imejl), potreban vam je program za manipulaciju GPG ili OpenPGP ključevima kao i imejl klijent. </p>
 					<p class="post-meta">Najbolje je da oba programa budu otvorenog koda (eng. Open-Source). </p>
-
-					<p class="post-meta">Za imejl klijenta preporučujemo <strong>K-9Mail</strong>, a za GPG klijenta
-						                   <strong>APG</strong> ili <strong>OpenKeyChain</strong>, ma da bi trebalo da
-															 možete da podesite GPG ključeve i sa <u>GnuPrivacyGuard</u>-om za android. </p>
-
-					<p class="post-meta">K-9 mejl klijenat će raditi sa svakim ponuđenim GPG klijentom, a možete ih
-                               preuzeti i sa Gugle plej stora (eng. Google Play Store) i
-															 sa F-Droida (eng. F-Droid). </p>
-
-					<p class="post-meta">Za potrebe ovog tutorijala proćićemo kroz instalaciju, podešavanja i razmenu
-						                   šifrovanih imejl poruka koristeći APG gpg klijenta i K-9 Mail imejl klijenta. </p>
+					<p class="post-meta">Za imejl klijenta preporučujemo <strong>K-9Mail</strong>, a za GPG klijenta <strong>APG</strong> ili <strong>OpenKeyChain</strong>, ma da bi trebalo da možete da podesite GPG ključeve i sa <u>GnuPrivacyGuard</u>-om za android. </p>
+					<p class="post-meta">K-9 mejl klijenat će raditi sa svakim ponuđenim GPG klijentom, a možete ih preuzeti i sa Gugle plej stora (eng. Google Play Store) i sa F-Droida (eng. F-Droid). </p>
+					<p class="post-meta">Za potrebe ovog tutorijala proćićemo kroz instalaciju, podešavanja i razmenu šifrovanih imejl poruka koristeći APG gpg klijenta i K-9 Mail imejl klijenta. </p>
 				</div>
-
 				<hr>
 				<div class="post-preview">
 					<h2 class="post-title">
                            2. Instaliranje APG-a
                         </h2>
-
-					<p class="post-meta">Ukoliko imate instaliran F-Droid, onda preporučujemo da APG preuzmete
-                               i instalirate sa F-Droida. </p>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgAnd/01.png" class="img-responsive img-rounded"> </div>
-					    <p class="post-meta figurice">Figure 1: Instaliranje APG-a sa Gugl pleja (eng. Google Play).</p>
-
+					<p class="post-meta">Ukoliko imate instaliran F-Droid, onda preporučujemo da APG preuzmete i instalirate sa F-Droida. </p>
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/01.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 1: Instaliranje APG-a sa Gugl pleja (eng. Google Play).</p>
 					<br>
 					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgAnd/02.png" class="img-responsive img-rounded"> </div>
-					    <p class="post-meta figurice">Figure 2: Kada se instalacija završi pokrenite APG.</p>
+					<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/02.png" class="img-responsive img-rounded"> </div>
+					<p class="post-meta figurice">Figure 2: Kada se instalacija završi pokrenite APG.</p>
 					<br>
-
 					<hr>
 					<div class="post-preview">
 						<h2 class="post-title">
 														 3. Podešavanje APG-a
 													</h2>
-
-					<p class="post-meta">Kada se instalacija završi pokrenite APG kako bi ste generisali vaš novi
-                               GPG ključ za postojeći imejl.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgAnd/03.png" class="img-responsive img-rounded"> </div>
-				    	<p class="post-meta figurice">Figure 3: Odaberite opciju "Create your own key" da bi ste kreirali novi
-                                            ključ. Ukoliko već imate željeni GPG ključ za mejl adresu koju koristite
-																			    	i na Android telefonu odaberite opciju "import keys" i unesite javni i
-																			    	tajni ključ sa drugog računara koristeći USB kabl.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgAnd/04.png" class="img-responsive img-rounded"> </div>
-				    	<p class="post-meta figurice">Figure 4: Kada se ključ generiše, pitaće vas da podesite GPG šifru za taj
-                                            ključ. Ovde obratite pažnju jer šifra mora da bude jaka kako bi vas zaštitila
-                                            i u slučaju gubitka ključeva.Šifra za pristup vašem mejlu ne bi trebalo da
-                                            bude ista niti da liči na šifru koju ste podesili za vaš GPG ključ. Savetujemo
-                                            upotrebu malih i velikih slova, brojeva kao i specijalnih kakraktera za šifru,
-                                            kao i da dužina šifre bude preko 12 karaktera.</p>
-
-					<p class="post-meta">Takođe je moguće umesto jedne duge šifre koristiti frazu od nekoliko nepovezanih slučajnih
-						                   reči (kao na primer: "Correct Horse Battery staple"). </p>
-
-					<p class="post-meta">Nakon postavljanja šifre za novi GPG ključ, dodajte imejl adresu za koju ste generisali ključ,
-						                   ime, kao i opcioni komentar ako želite. </p>
-
-					<p class="post-meta">Posle ovog koraka smo završili sa podešavanjima za APG, i prelazimo na instaliranje i
-                               podešavanje imajl klijenta koji će se oslanjati na APG za operacije šifrovanja,
-                               dešifrovanja, digitalnog potpisivanja i provere digitalnih potpisa. </p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgAnd/05.png" class="img-responsive img-rounded"> </div>
-					    <p class="post-meta figurice">Figure 5: Dodajte imejl adresu za koju ste generisali ključ i ime.</p>
-					<br>
-
-					<!-- SLEDECA -->
-
-					<hr>
-					<div class="post-preview">
-						<h3 class="post-title">
+						<p class="post-meta">Kada se instalacija završi pokrenite APG kako bi ste generisali vaš novi GPG ključ za postojeći imejl.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/03.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 3: Odaberite opciju "Create your own key" da bi ste kreirali novi ključ. Ukoliko već imate željeni GPG ključ za mejl adresu koju koristite i na Android telefonu odaberite opciju "import keys" i unesite javni i tajni ključ sa drugog računara koristeći USB kabl.</p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/04.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 4: Kada se ključ generiše, pitaće vas da podesite GPG šifru za taj ključ. Ovde obratite pažnju jer šifra mora da bude jaka kako bi vas zaštitila i u slučaju gubitka ključeva.Šifra za pristup vašem mejlu ne bi trebalo da bude ista niti da liči na šifru koju ste podesili za vaš GPG ključ. Savetujemo upotrebu malih i velikih slova, brojeva kao i specijalnih kakraktera za šifru, kao i da dužina šifre bude preko 12 karaktera.</p>
+						<p class="post-meta">Takođe je moguće umesto jedne duge šifre koristiti frazu od nekoliko nepovezanih slučajnih reči (kao na primer: "Correct Horse Battery staple"). </p>
+						<p class="post-meta">Nakon postavljanja šifre za novi GPG ključ, dodajte imejl adresu za koju ste generisali ključ, ime, kao i opcioni komentar ako želite. </p>
+						<p class="post-meta">Posle ovog koraka smo završili sa podešavanjima za APG, i prelazimo na instaliranje i podešavanje imajl klijenta koji će se oslanjati na APG za operacije šifrovanja, dešifrovanja, digitalnog potpisivanja i provere digitalnih potpisa. </p>
+						<br>
+						<!-- SLEDECA -->
+						<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/05.png" class="img-responsive img-rounded"> </div>
+						<p class="post-meta figurice">Figure 5: Dodajte imejl adresu za koju ste generisali ključ i ime.</p>
+						<br>
+						<!-- SLEDECA -->
+						<hr>
+						<div class="post-preview">
+							<h3 class="post-title">
 														 3.1. Objavljivanje vašeg javnog kluča
 													</h3>
-
-					<p class="post-meta">Kada kreirate GPG ključ želite da objavite vaš javni ključ kako bi svako ko
-                               želi da vam pošalje šifrovanu poruku mogao lako da sazna i nabavi vaš javni
-                               ključ i njime vam šifruje poruku. </p>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						 <img src="../images/gpgAnd/06.png" class="img-responsive img-rounded"> </div>
-					     <p class="post-meta figurice">Figure 6: Pošaljite vaš javni ključ iz APG-a na server javnih ključeva
-                                             (eng key server) (u našem slučaju server je
-											<a href="http://pgp.mit.edu/"  data-toggle="tooltip" title="MIT Public Key Server">pgp.mit.edu</a>).</p>
-					<br>
-					<!-- SLEDECA -->
-
-					<hr>
-					<div class="post-preview">
-						<h2 class="post-title">
+							<p class="post-meta">Kada kreirate GPG ključ želite da objavite vaš javni ključ kako bi svako ko želi da vam pošalje šifrovanu poruku mogao lako da sazna i nabavi vaš javni ključ i njime vam šifruje poruku. </p>
+							<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/06.png" class="img-responsive img-rounded"> </div>
+							<p class="post-meta figurice">Figure 6: Pošaljite vaš javni ključ iz APG-a na server javnih ključeva (eng key server) (u našem slučaju server je <a href="http://pgp.mit.edu/" data-toggle="tooltip" title="MIT Public Key Server">pgp.mit.edu</a>).</p>
+							<br>
+							<!-- SLEDECA -->
+							<hr>
+							<div class="post-preview">
+								<h2 class="post-title">
 														 4. Instaliranje K-9 Mejl-a
 													</h2>
-
-					<p class="post-meta">Kako bi lakše dešifrovali primaljene šifrovane mejlove i slali šifrovane mejlove
-                               drugima potreban vam je imejl klijent koji prepoznaje da se radi o šifrovanim
-                               porukama i u tom slučaju se obraća programu (APG-u) za podršku. </p>
-
-					<p class="post-meta">Postoje i drugi klijenti pored K-9 mejla koji podržavaju šeifrovanu elektronsku
-                               poštu oslanjajući se na APG ili Openkičejn (eng. OpenKeyChain), ali nisu
-                               otvorenog koda (eng. OpenSource) kao APG. </p>
-
-					<p class="post-meta">Da bi instalirali K-9 mejl, idite na Gugle Plej stor (eng. Google Play Store),
-                               ili na F-Droid. </p>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						 <img src="../images/gpgAnd/07.png" class="img-responsive img-rounded"> </div>
-					      <p class="post-meta figurice">Figure 7: Instalirajte K-9 mejl sa Gugle Plej-a ili F-droid-a.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						 <img src="../images/gpgAnd/08.png" class="img-responsive img-rounded"> </div>
-					      <p class="post-meta figurice">Figure 8: Kada se instalacija završi pokrenite K-9 mejl.</p>
-					<br>
-					<!-- SLEDECA -->
-
-					<hr>
-					<div class="post-preview">
-						<h2 class="post-title">
+								<p class="post-meta">Kako bi lakše dešifrovali primaljene šifrovane mejlove i slali šifrovane mejlove drugima potreban vam je imejl klijent koji prepoznaje da se radi o šifrovanim porukama i u tom slučaju se obraća programu (APG-u) za podršku. </p>
+								<p class="post-meta">Postoje i drugi klijenti pored K-9 mejla koji podržavaju šeifrovanu elektronsku poštu oslanjajući se na APG ili Openkičejn (eng. OpenKeyChain), ali nisu otvorenog koda (eng. OpenSource) kao APG. </p>
+								<p class="post-meta">Da bi instalirali K-9 mejl, idite na Gugle Plej stor (eng. Google Play Store), ili na F-Droid. </p>
+								<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/07.png" class="img-responsive img-rounded"> </div>
+								<p class="post-meta figurice">Figure 7: Instalirajte K-9 mejl sa Gugle Plej-a ili F-droid-a.</p>
+								<br>
+								<!-- SLEDECA -->
+								<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/08.png" class="img-responsive img-rounded"> </div>
+								<p class="post-meta figurice">Figure 8: Kada se instalacija završi pokrenite K-9 mejl.</p>
+								<br>
+								<!-- SLEDECA -->
+								<hr>
+								<div class="post-preview">
+									<h2 class="post-title">
 														 5. Pedešavanje K-9 mejl-a
 													</h2>
-
-					<p class="post-meta">Kada posle instalacije pokrenete K-9 mejl, potrebno je da podesite vaš imejl
-                               nelog unošenjem vaše mejl adrese (imejl adresa je ona ista za koju ste kreirali
-                               i GPG ključ, u našem slučaju <u>alisa.sifrovano@gmail.com</u>) i šifre za
-                               pristup toj mejl adresi. </p>
-
-					<p class="post-meta">Važno je razumeti da postoje dve šifre: jedna za pristup vašem mejlu u obliku
-                               korisničkog imena mejl adrese i šifre za to korisničko ime, a druga šifra je za
-                               pristup vašem tajnom GPG ključu koga ste malopre kreirali pomoću APG programa. </p>
-
-					<p class="post-meta">Šifra za GPG nema nikakve veze sa šifrom za pristup vašem mejl
-                               nalogu, i ukoliko izgubite GPG šifru i dalje ćete moći pristupiti mejl nalogu
-                               čitati/pisati nevšifrovane mejlove. </p>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-					  <img src="../images/gpgAnd/09.png" class="img-responsive img-rounded"> </div>
-					    <p class="post-meta figurice">Figure 9: U K-9 mejlu unesite mejl adresu za koju ste pravili GPG ključ
-								                            i šiftu za pristup tom mejlu.</p>
-					<hr>
-					<div class="post-preview">
-				    	<h2 class="post-title">
+									<p class="post-meta">Kada posle instalacije pokrenete K-9 mejl, potrebno je da podesite vaš imejl nelog unošenjem vaše mejl adrese (imejl adresa je ona ista za koju ste kreirali i GPG ključ, u našem slučaju <u>alisa.sifrovano@gmail.com</u>) i šifre za pristup toj mejl adresi. </p>
+									<p class="post-meta">Važno je razumeti da postoje dve šifre: jedna za pristup vašem mejlu u obliku korisničkog imena mejl adrese i šifre za to korisničko ime, a druga šifra je za pristup vašem tajnom GPG ključu koga ste malopre kreirali pomoću APG programa. </p>
+									<p class="post-meta">Šifra za GPG nema nikakve veze sa šifrom za pristup vašem mejl nalogu, i ukoliko izgubite GPG šifru i dalje ćete moći pristupiti mejl nalogu čitati/pisati nevšifrovane mejlove. </p>
+									<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/09.png" class="img-responsive img-rounded"> </div>
+									<p class="post-meta figurice">Figure 9: U K-9 mejlu unesite mejl adresu za koju ste pravili GPG ključ i šiftu za pristup tom mejlu.</p>
+									<hr>
+									<div class="post-preview">
+										<h2 class="post-title">
 						  							 6. Razmena šifrovanih poruka
 													</h2>
-					<div class="post-preview">
-					<h3 class="post-title">
+										<div class="post-preview">
+											<h3 class="post-title">
 														 6.1. Nabavljanje javnog ključa kontakta
 													 </h3>
-
-          <p class="post-meta">Da bi ste poslali šifrovanu poruku potreban vam je javni ključ kontakta kome
-                               istu želite poslati,isti javni ključ vam je takođe potreban da bi ste proverili
-                               digitalni potpis primljene poruke istog kontakta. </p>
-
-					<p class="post-meta">Pa hajde da preuzmemo javni ključ nekog našeg kontakta. </p>
-
-					<p class="post-meta">Podrazumeva se da je i naš kontakt takođe kreirao svoj par GPG ključeva,
-						                   kao i da je poslao javnikluč na neki server javnih ključeva. </p>
-
-					<p class="post-meta">Napomenimo da nije bitno na koji server javnih ključeva ste vi poslali vaš javni
-						                   ključ ili vaš kontakt svoj, jer se svi serveri javnih ključeva međusobno sinhronizuju. </p>
-
-					<p class="post-meta">Pa tako, svaki ključ koji se pošalje na neki server javnih
-                               ključeva naćiće se na svim ostalima posle otprilike desetak minuta.</p>
-
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgAnd/10.png" class="img-responsive img-rounded"> </div>
-					    <p class="post-meta figurice">Figure 10: Da bi ste nabavli javni ključ kontakta izaberite gornji levi meni
-                                            unutar AGP-a i opciju uvoza ključeva (eng. Import Keys), odaberite server
-                                            javnih ključeva i unesite imejl adresu čiji javni ključ želite nabaviti. Ukoliko
-                                            adresa ima više ključeva, obratite se kontaktu za izbor trenutnog važećeg.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="post-preview">
-					<h3 class="post-title">
+											<p class="post-meta">Da bi ste poslali šifrovanu poruku potreban vam je javni ključ kontakta kome istu želite poslati,isti javni ključ vam je takođe potreban da bi ste proverili digitalni potpis primljene poruke istog kontakta. </p>
+											<p class="post-meta">Pa hajde da preuzmemo javni ključ nekog našeg kontakta. </p>
+											<p class="post-meta">Podrazumeva se da je i naš kontakt takođe kreirao svoj par GPG ključeva, kao i da je poslao javnikluč na neki server javnih ključeva. </p>
+											<p class="post-meta">Napomenimo da nije bitno na koji server javnih ključeva ste vi poslali vaš javni ključ ili vaš kontakt svoj, jer se svi serveri javnih ključeva međusobno sinhronizuju. </p>
+											<p class="post-meta">Pa tako, svaki ključ koji se pošalje na neki server javnih ključeva naćiće se na svim ostalima posle otprilike desetak minuta.</p>
+											<br>
+											<!-- SLEDECA -->
+											<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/10.png" class="img-responsive img-rounded"> </div>
+											<p class="post-meta figurice">Figure 10: Da bi ste nabavli javni ključ kontakta izaberite gornji levi meni unutar AGP-a i opciju uvoza ključeva (eng. Import Keys), odaberite server javnih ključeva i unesite imejl adresu čiji javni ključ želite nabaviti. Ukoliko adresa ima više ključeva, obratite se kontaktu za izbor trenutnog važećeg.</p>
+											<br>
+											<!-- SLEDECA -->
+											<div class="post-preview">
+												<h3 class="post-title">
 														 6.2. Slanje šifrovanih mejlova
 													 </h3>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						 <img src="../images/gpgAnd/11.png" class="img-responsive img-rounded"> </div>
-					      <p class="post-meta figurice">Figure 11: Da bi ste poslali šifrovanu poruku, prvo sastavite istu i unesite
-                                              imejl adresu primaoca čiji ste javni ključ predhodno preuzeli.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						 <img src="../images/gpgAnd/12.png" class="img-responsive img-rounded"> </div>
-					      <p class="post-meta figurice">Figure 12: Kada sastavite poruku odaberite opcije za digitalno potpisivanje
-									                            (eng Sign) i šifrovanje (eng. Encrypt), i selektujete za potpisivanje
-																							 vaš ključ.</p>
-					<br>
-					<!-- SLEDECA -->
-					<div class="embed-responsive " style="height: 50% !important;">
-						 <img src="../images/gpgAnd/13.png" class="img-responsive img-rounded"> </div>
-					     <p class="post-meta figurice">Figure 13: I najzad kliknite na ikonicu za slanje poruke (papitni aviončić)
-                                             i unesite vašu šifru za pristup vašem tajnom GPG ključu kako bi pristupili
-                                             istom i digitalno potpisali poruku pored šifrovanja.</p>
-					<br>
-					<!-- SLEDECA -->
-					<br>
-					<!-- SLEDECA -->
-					<div class="post-preview">
-					<h3 class="post-title">
+												<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/11.png" class="img-responsive img-rounded"> </div>
+												<p class="post-meta figurice">Figure 11: Da bi ste poslali šifrovanu poruku, prvo sastavite istu i unesite imejl adresu primaoca čiji ste javni ključ predhodno preuzeli.</p>
+												<br>
+												<!-- SLEDECA -->
+												<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/12.png" class="img-responsive img-rounded"> </div>
+												<p class="post-meta figurice">Figure 12: Kada sastavite poruku odaberite opcije za digitalno potpisivanje (eng Sign) i šifrovanje (eng. Encrypt), i selektujete za potpisivanje vaš ključ.</p>
+												<br>
+												<!-- SLEDECA -->
+												<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/13.png" class="img-responsive img-rounded"> </div>
+												<p class="post-meta figurice">Figure 13: I najzad kliknite na ikonicu za slanje poruke (papitni aviončić) i unesite vašu šifru za pristup vašem tajnom GPG ključu kako bi pristupili istom i digitalno potpisali poruku pored šifrovanja.</p>
+												<br>
+												<!-- SLEDECA -->
+												<br>
+												<!-- SLEDECA -->
+												<div class="post-preview">
+													<h3 class="post-title">
 														 6.3. Primanje šifrovanih mejlova
 													 </h3>
-
-					<p class="post-meta">Kada vam neko pošalje šifrovanu poruku, potrebno je da otvorite K-9 mejl
-                               klijenta, otvorite primljenu poruku, kliknete na dugme za dešifrovanje (eng.
-                               Decrypt) i unesete vašu GPG šifru. </p>
-
-					<p class="post-meta">APG prepoznaje šifrovane poruke unutar K-9 mejl klijenta i ponudiće da ih dešifruje. </p>
-
-					<div class="embed-responsive " style="height: 50% !important;">
-						<img src="../images/gpgAnd/13.png" class="img-responsive img-rounded"> </div>
-					    <p class="post-meta figurice">Figure 14: Kada primite šifrovanu poruku u K-9 mejl klijentu kliknite na
-                                            Decrypt i unesite GPG šifru i to je to.</p>
-
-	<hr>
-	<!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-					<ul class="list-inline text-center">
-						<li>
-							<a href="#"> <span class="fa-stack fa-lg">
+													<p class="post-meta">Kada vam neko pošalje šifrovanu poruku, potrebno je da otvorite K-9 mejl klijenta, otvorite primljenu poruku, kliknete na dugme za dešifrovanje (eng. Decrypt) i unesete vašu GPG šifru. </p>
+													<p class="post-meta">APG prepoznaje šifrovane poruke unutar K-9 mejl klijenta i ponudiće da ih dešifruje. </p>
+													<div class="embed-responsive " style="height: 50% !important;"> <img src="../images/gpgAnd/13.png" class="img-responsive img-rounded"> </div>
+													<p class="post-meta figurice">Figure 14: Kada primite šifrovanu poruku u K-9 mejl klijentu kliknite na Decrypt i unesite GPG šifru i to je to.</p>
+													<hr>
+													<!-- Footer -->
+													<footer>
+														<div class="container">
+															<div class="row">
+																<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+																	<ul class="list-inline text-center">
+																		<li>
+																			<a href="#"> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                                 </span> </a>
-						</li>
-						<li>
-							<a href="#"> <span class="fa-stack fa-lg">
+																		</li>
+																		<li>
+																			<a href="#"> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
                                 </span> </a>
-						</li>
-						<li>
-							<a href="#"> <span class="fa-stack fa-lg">
+																		</li>
+																		<li>
+																			<a href="#"> <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                                 </span> </a>
-						</li>
-					</ul>
-					<p class="copyright text-muted">Copyleft &copy; tutor.cryptoparty.rs 2016</p>
-				</div>
-			</div>
-		</div>
-		<p class="post-meta" style="color: #444; text-align: center;">Made with
-			<span class="love">♥</span> by Cryptoparty Serbia</p>
-	</footer>
-	<!-- jQuery -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<!-- Bootstrap Core JavaScript -->
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Contact Form JavaScript -->
-	<script src="js/jqBootstrapValidation.js"></script>
-	<script src="js/contact_me.js"></script>
-	<!-- Theme JavaScript -->
-	<script src="js/clean-blog.min.js"></script>
-	<script>
-		$('a.neSkaci').click(function (e) {
-			e.preventDefault();
-		});
-		jQuery(document).ready(function () {
-			$("#splashscreen, #splash-in").delay(800).fadeOut(1000);
-			var offset = 150;
-			var duration = 700;
-			jQuery(window).scroll(function () {
-				$(".fab").css("cursor", "pointer");
-				if (jQuery(this).scrollTop() > offset) {
-					jQuery('.fab').fadeIn(duration);
-				}
-				else {
-					jQuery('.fab').fadeOut(duration);
-				}
-			});
-			jQuery('.fab').dblclick(function (event) {
-				jQuery('html, body').animate({}, duration);
-				return false;
-			})
-		});
-	</script>
+																		</li>
+																	</ul>
+																	<p class="copyright text-muted">Copyleft &copy; tutor.cryptoparty.rs 2016</p>
+																</div>
+															</div>
+														</div>
+														<p class="post-meta" style="color: #444; text-align: center;">Made with <span class="love">♥</span> by Cryptoparty Serbia</p>
+													</footer>
+													<!-- jQuery -->
+													<script src="vendor/jquery/jquery.min.js"></script>
+													<!-- Bootstrap Core JavaScript -->
+													<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+													<!-- Contact Form JavaScript -->
+													<script src="js/jqBootstrapValidation.js"></script>
+													<script src="js/contact_me.js"></script>
+													<!-- Theme JavaScript -->
+													<script src="js/clean-blog.min.js"></script>
+													<script>
+														$('a.neSkaci').click(function (e) {
+															e.preventDefault();
+														});
+														jQuery(document).ready(function () {
+															$("#splashscreen, #splash-in").delay(800).fadeOut(1000);
+															var offset = 150;
+															var duration = 700;
+															jQuery(window).scroll(function () {
+																$(".fab").css("cursor", "pointer");
+																if (jQuery(this).scrollTop() > offset) {
+																	jQuery('.fab').fadeIn(duration);
+																}
+																else {
+																	jQuery('.fab').fadeOut(duration);
+																}
+															});
+															jQuery('.fab').dblclick(function (event) {
+																jQuery('html, body').animate({}, duration);
+																return false;
+															})
+														});
+													</script>
 </body>
 
 </html>
